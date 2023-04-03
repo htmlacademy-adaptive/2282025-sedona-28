@@ -17,17 +17,17 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-navigation__wrapper">
-        <ul class="main-navigation_list site-list">
-          <li class="site-list__item site-list__item--current">
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item main-navigation__item--current">
             <a href="index.html">Главная</a>
           </li>
-          <li class="site-list__item">
+          <li class="main-navigation__item">
             <a href="catalog.html">Фото и видео</a>
           </li>
-          <li class="site-list__item">
-            <a href="feedback.html">Форма отзыва</a>
+          <li class="main-navigation__item">
+            <a href="form.html">Форма отзыва</a>
           </li>
-          <li class="site-list__item">
+          <li class="main-navigation__item">
             <a href="https://htmlacademy.ru/">HTML Academy</a>
           </li>
         </ul>
@@ -35,7 +35,7 @@
     </nav>
   </header>
   <main class="main-container">
-    <section class="intro">
+    <section class="intro  intro--full">
       <div class="intro__wrapper">
         <h1 class="visually-hidden">Добро пожаловать в великолепный город Седона.</h1>
       </div>
@@ -100,7 +100,7 @@
         <h2 class="search__title">Заинтересовались?</h2>
         <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
           гостиниц в Седоне</p>
-        <a class="search__hotel button" href="#">Найти гостиницу</a>
+        <a class="search__button button" href="#">Найти гостиницу</a>
       </div>
     </section>
     <section class="map">
@@ -112,11 +112,11 @@
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <div class="main-footer__hashtag hashtag">
-        <h2 class="visually-hidden">Наш хэштег</h2>
+      <section class="hashtag">
+        <h2 class="visually-hidden">Ищи нас по хэштегу</h2>
         <b class="hashtag__text">#visitsedona</b>
-      </div>
-      <div class="main-footer__social social">
+      </section>
+      <section class="social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="social__list">
           <li class="social__item">
@@ -135,13 +135,13 @@
             </a>
           </li>
         </ul>
-      </div>
-      <div class="main-footer__copyright copyright">
+      </section>
+      <section class="copyright">
         <h2 class="copyright__title">Разработано</h2>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">HTML Academy</span>
         </a>
-      </div>
+      </section>
     </div>
   </footer>
 </body>
