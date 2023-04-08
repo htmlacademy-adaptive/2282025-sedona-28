@@ -1,0 +1,22 @@
+// Навигвция
+.main-navigation {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.main-navigation__list {
+  @include list-reset;
+}
+
+.main-navigation__item {
+  background-color: $color-blue;
+  text-align: center;
+}
+
+.main-navigation__link {
+  text-decoration: none;
+  color: $color-white;
+}

@@ -1,0 +1,7 @@
+// social
+.social__list {
+  @include list-reset;
+}
+.social__item {
+  background-color: $color-blue;
+}

@@ -1,0 +1,26 @@
+.intro__logo {
+  color: $color-black;
+  background-image: url("/img/index/back-mobile.jpg");
+  background-color: $color-gray;
+  background-repeat: no-repeat;
+}
+
+.intro__logo-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.intro__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+.intro__text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}

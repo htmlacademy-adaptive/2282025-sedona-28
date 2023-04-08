@@ -1,0 +1,21 @@
+// Футер
+.main-footer__hashtag {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.main-footer__copyright {
+  text-decoration: none;
+  color: $color-black;
+  justify-content: center;
+}
+
+.main-footer__copyright-title {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-decoration: none;
+  color: $color-black;
+}
