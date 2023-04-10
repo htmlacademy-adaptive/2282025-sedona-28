@@ -1,7 +1,10 @@
 // social
 .social__list {
   @include list-reset;
+  display: flex;
+  justify-content: space-between;
 }
+
 .social__item {
   background-color: $color-blue;
 }

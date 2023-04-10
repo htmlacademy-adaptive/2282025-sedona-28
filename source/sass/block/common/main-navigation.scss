@@ -1,6 +1,7 @@
 // Навигвция
 .main-navigation {
-  font-family: "PT Sans", "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -19,4 +20,5 @@
 .main-navigation__link {
   text-decoration: none;
   color: $color-white;
+  padding: 17px 20px 10px 20px;
 }

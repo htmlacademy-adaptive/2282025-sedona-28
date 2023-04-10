@@ -1,0 +1,30 @@
+// Видео
+.video__wrapper {
+  padding: 0 20px;
+}
+
+.video__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-black;
+  margin: 0;
+  margin-top: 17px;
+}
+
+.video__text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-brown;
+  margin: 0;
+  margin-top: 38px;
+}
+
+.video__inner {
+  margin-top: 38px;
+}

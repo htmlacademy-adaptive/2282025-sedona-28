@@ -5,14 +5,18 @@
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  color: $color-black;
 }
+
 .search__text {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
+  color: $color-brown;
 }
+
 .search__button {
   display: flex;
   justify-content: center;

@@ -1,31 +1,31 @@
 // Миксины
-@import './mixins.scss';
-
+@import "./mixins.scss";
 // Переменные
-@import './variables.scss';
-
+@import "./variables.scss";
 //  Базовые стили
-@import './base/base.scss';
-@import './base/button.scss';
-@import './base/fonts.scss';
-@import './base/visually-hidden.scss';
-
+@import "./base/base.scss";
+@import "./base/button.scss";
+@import "./base/fonts.scss";
+@import "./base/visually-hidden.scss";
 // Блоки компонентов
-@import './block/index/advantages.scss';
-@import './block/index/intro-full.scss';
-@import './block/index/map.scss';
-@import './block/index/search.scss';
-
-@import './block/form/intro.scss';
-@import './block/form/feedback.scss';
-
-@import './block/catalog/body.scss';
-@import './block/catalog/intro.scss';
-@import './block/catalog/photo.scss';
-@import './block/catalog/video.scss';
-
-@import './block/common/main-container.scss';
-@import './block/common/main-footer.scss';
-@import './block/common/main-header.scss';
-@import './block/common/main-navigation.scss';
-@import './block/common/social.scss';
+// Главная страница
+@import "./block/index/advantages.scss";
+@import "./block/index/intro-full.scss";
+@import "./block/index/map.scss";
+@import "./block/index/search.scss";
+// Страница обратной связи
+@import "./block/form/intro-form.scss";
+@import "./block/form/feedback.scss";
+// Страница галереи
+@import "./block/catalog/body.scss";
+@import "./block/catalog/card-photo.scss";
+@import "./block/catalog/gallery.scss";
+@import "./block/catalog/intro-catalog.scss";
+@import "./block/catalog/video.scss";
+// Общие блоки
+@import "./block/common/intro-common.scss";
+@import "./block/common/main-container.scss";
+@import "./block/common/main-footer.scss";
+@import "./block/common/main-header.scss";
+@import "./block/common/main-navigation.scss";
+@import "./block/common/social.scss";

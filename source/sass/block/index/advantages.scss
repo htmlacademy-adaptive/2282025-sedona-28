@@ -1,49 +1,91 @@
 // advantages
-.advantages__item {
-background-color: $color-gray;
+.advantages__wrapper {
+  padding: 33px 0 25px 0;
+
 }
-.advantages__item--img {
+
+.advantages__item-inner {
+  background-color: $color-gray;
+  padding: 24px 18px 28px 18px;
+}
+
+.advantages__item-container--img {
   background-color: $color-blue;
-  color: $color-white;
+  padding: 37px 18px;
 }
+
+.advantages__image--img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.advantages__list {
+  @include list-reset;
+}
+
 .advantages__sublist {
   @include list-reset;
   background-color: $color-white;
   color: $color-black;
+  padding: 23px 18px 46px 18px;
 }
-.advantages__list {
-  @include list-reset;
+
+.advantages__title--img {
+  @include title;
+  color: $color-white;
 }
+
+.advantages__number--img {
+  @include text;
+  color: $color-white;
+  margin-top: 11px;
+}
+
+.advantages__text--img {
+  @include text;
+  color: $color-white;
+  margin-top: 17px;
+}
+
+.advantages__item-container {
+  padding: 24px 0;
+}
+
+.advantages__item-container:first-child {
+  padding-top: 0;
+}
+
+.advantages__item-container:last-child {
+  padding-bottom: 0;
+}
+
 .advantages__title {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
+  @include title;
+  color: $color-black;
 }
+
 .advantages__number {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  text-align: center;
-  text-transform: uppercase;
+  @include text;
+  color: $color-brown;
 }
+
 .advantages__text {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  text-align: center;
-  text-transform: uppercase;
+  @include text;
+  color: $color-brown;
 }
+
 .advantages__subtitle {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  text-transform: uppercase;
+  @include title;
+  text-align: start;
+  margin-top: 8px;
+  color: $color-black;
 }
+
 .advantages__subtext {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  text-transform: uppercase;
+  @include text;
+  text-align: start;
+  margin-top: 16px;
+  color: $color-brown;
 }

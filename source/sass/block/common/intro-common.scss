@@ -1,11 +1,14 @@
 .intro__logo {
   color: $color-black;
   background-image: url("/img/index/back-mobile.jpg");
+  background-position: left bottom;
   background-color: $color-gray;
   background-repeat: no-repeat;
 }
 
 .intro__logo-img {
+  display: block;
   max-width: 100%;
   height: auto;
+  margin: 0 auto;
 }

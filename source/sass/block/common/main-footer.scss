@@ -1,21 +1,28 @@
 // Футер
+.main-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 33px 82px;
+}
+
 .main-footer__hashtag {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   text-align: center;
+  text-transform: uppercase;
+  color: $color-black;
 }
 
 .main-footer__copyright {
   text-decoration: none;
-  color: $color-black;
-  justify-content: center;
 }
 
 .main-footer__copyright-title {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  text-decoration: none;
+  text-transform: uppercase;
   color: $color-black;
 }
