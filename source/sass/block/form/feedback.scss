@@ -32,8 +32,8 @@
 }
 
 .form__label-text {
-  display: flex;
   @include text;
+  display: flex;
   margin-left: 16px;
   color: $color-brown;
 }
