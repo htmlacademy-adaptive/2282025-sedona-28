@@ -14,8 +14,10 @@
 @import "./block/index/map.scss";
 @import "./block/index/search.scss";
 // Страница обратной связи
+@import "./block/form/error.scss";
 @import "./block/form/intro-form.scss";
 @import "./block/form/feedback.scss";
+@import "./block/form/success.scss";
 // Страница галереи
 @import "./block/catalog/body.scss";
 @import "./block/catalog/card-photo.scss";

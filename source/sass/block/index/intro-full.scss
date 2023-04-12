@@ -1,4 +1,8 @@
 // intro
+.intro__logo {
+  padding: 52px 0 67px 0;
+}
+
 .intro__logo--full {
   color: $color-black;
   background-image: url("/img/index/back-mobile.jpg");
@@ -8,7 +12,7 @@
 }
 
 .intro__wrapper--full {
-  padding: 32px 18px 16px 18px;
+  padding: 32px 18px 32px 18px;
 }
 
 .intro__title {

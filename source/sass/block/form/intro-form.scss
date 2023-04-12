@@ -1,3 +1,14 @@
-.intro__wrapper {
+.intro__wrapper--form {
   padding: 36px 20px 28px 20px;
+}
+
+.intro__title--form {
+  @include title;
+  color: $color-black;
+}
+
+.intro__text--form {
+  @include text;
+  color: $color-brown;
+  margin-top: 24px;
 }

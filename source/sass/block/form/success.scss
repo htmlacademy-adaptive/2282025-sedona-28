@@ -1,0 +1,26 @@
+.success {
+  display: flex;
+  flex-direction: column;
+}
+
+.success__title {
+  @include title;
+  color: $color-black;
+}
+
+.success__text {
+  @include text;
+  color: $color-brown;
+  margin-top: 36px;
+}
+
+.success__button {
+  width: 280px;
+  padding: 10px;
+  margin: 20px auto;
+}
+
+.success__background-grey {
+  display: flex;
+  background-color: $color-beige;
+}

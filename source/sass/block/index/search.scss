@@ -1,20 +1,18 @@
 // search
+.search__wrapper {
+  padding: 38px 18px 49px 18px;
+}
+
 .search__title {
+  @include title;
   font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
   color: $color-black;
 }
 
 .search__text {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  text-align: center;
-  text-transform: uppercase;
+  @include text;
   color: $color-brown;
+  margin-top: 26px;
 }
 
 .search__button {
@@ -25,4 +23,6 @@
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
+  padding: 12px;
+  margin-top: 32px;
 }
