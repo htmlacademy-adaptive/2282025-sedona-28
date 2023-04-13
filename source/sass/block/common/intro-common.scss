@@ -1,5 +1,4 @@
 .intro__logo {
-  color: $color-black;
   background-image: url("/img/index/back-mobile.jpg");
   background-position: left bottom;
   background-color: $color-gray;
@@ -7,10 +6,6 @@
   padding: 52px 0 67px 0;
 
   &--full {
-    color: $color-black;
-    background-image: url("/img/index/back-mobile.jpg");
-    background-color: $color-gray;
-    background-repeat: no-repeat;
     padding: 90px 19px 85px 19px;
   }
 }
