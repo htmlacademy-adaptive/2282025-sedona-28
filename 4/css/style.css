@@ -522,7 +522,6 @@
 }
 
 .intro__logo {
-  color: #000000;
   background-image: url("/img/index/back-mobile.jpg");
   background-position: left bottom;
   background-color: #d6d6d6;
@@ -530,10 +529,6 @@
   padding: 52px 0 67px 0;
 }
 .intro__logo--full {
-  color: #000000;
-  background-image: url("/img/index/back-mobile.jpg");
-  background-color: #d6d6d6;
-  background-repeat: no-repeat;
   padding: 90px 19px 85px 19px;
 }
 
