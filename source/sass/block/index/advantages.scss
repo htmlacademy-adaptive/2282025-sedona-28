@@ -1,15 +1,19 @@
 // advantages
-.advantages__item-inner {
-  background-color: $color-gray;
-  padding: 24px 18px 28px 18px;
+.advantages__box {
+  padding: 24px 18px 24px 18px;
+
+  &--img {
+    background-color: $color-blue;
+    padding: 37px 18px;
+  }
+
+  &--gray {
+    background-color: $color-light-beige;
+    border-top: 1px solid $color-gray;
+  }
 }
 
-.advantages__item-container--img {
-  background-color: $color-blue;
-  padding: 37px 18px;
-}
-
-.advantages__image--img {
+.advantages__image {
   display: block;
   max-width: 100%;
   height: auto;
@@ -20,67 +24,51 @@
   @include list-reset;
 }
 
-.advantages__sublist {
-  @include list-reset;
-  background-color: $color-white;
-  color: $color-black;
-  padding: 23px 18px 46px 18px;
-}
-
-.advantages__title--img {
-  @include title;
-  color: $color-white;
-}
-
-.advantages__number--img {
-  @include text;
-  color: $color-white;
-  margin-top: 11px;
-}
-
-.advantages__text--img {
-  @include text;
-  color: $color-white;
-  margin-top: 17px;
-}
-
-.advantages__item-container {
-  padding: 24px 0;
-}
-
-.advantages__item-container:first-child {
-  padding-top: 0;
-}
-
-.advantages__item-container:last-child {
-  padding-bottom: 0;
-}
 
 .advantages__title {
   @include title;
   color: $color-black;
+
+  &--img {
+    color: $color-white;
+  }
 }
 
 .advantages__number {
   @include text;
   color: $color-brown;
+  margin-top: 17px;
+
+  &--img {
+    color: $color-white;
+  }
 }
 
 .advantages__text {
   @include text;
   color: $color-brown;
+  margin-top: 17px;
+
+  &--img {
+    color: $color-white;
+  }
+}
+
+.advantages__sublist {
+  @include list-reset;
+  padding: 23px 18px 46px 18px;
 }
 
 .advantages__subtitle {
   @include title;
+  color: $color-black;
   text-align: start;
   margin-top: 8px;
-  color: $color-black;
 }
 
 .advantages__subtext {
   @include text;
+  color: $color-brown;
   text-align: start;
   margin-top: 16px;
-  color: $color-brown;
 }

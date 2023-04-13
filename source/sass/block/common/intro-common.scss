@@ -4,6 +4,15 @@
   background-position: left bottom;
   background-color: $color-gray;
   background-repeat: no-repeat;
+  padding: 52px 0 67px 0;
+
+  &--full {
+    color: $color-black;
+    background-image: url("/img/index/back-mobile.jpg");
+    background-color: $color-gray;
+    background-repeat: no-repeat;
+    padding: 90px 19px 85px 19px;
+  }
 }
 
 .intro__logo-img {
@@ -11,4 +20,35 @@
   max-width: 100%;
   height: auto;
   margin: 0 auto;
+}
+
+.intro__wrapper {
+  &--full {
+    padding: 32px 18px 32px 18px;
+  }
+
+  &--catalog {
+    padding: 37px 20px 25px 20px;
+  }
+
+  &--form {
+    padding: 36px 20px 28px 20px;
+  }
+}
+
+.intro__title {
+  @include title;
+  color: $color-black;
+}
+
+.intro__text {
+  @include text;
+  color: $color-brown;
+  margin-top: 35px;
+
+  &--form {
+    @include text;
+    color: $color-brown;
+    margin-top: 24px;
+  }
 }

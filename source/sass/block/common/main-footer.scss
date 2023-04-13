@@ -7,22 +7,22 @@
 }
 
 .main-footer__hashtag {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
+  @include title;
   color: $color-black;
+  font-size: 21px;
 }
 
 .main-footer__copyright {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
   text-decoration: none;
 }
 
 .main-footer__copyright-title {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  text-transform: uppercase;
+  @include text;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
   color: $color-black;
 }

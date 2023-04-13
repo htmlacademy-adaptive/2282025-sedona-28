@@ -23,11 +23,14 @@
 
 .form__title {
   @include title;
-  color: $color-black;
 }
 
 .form__input-text {
+  @include title;
   background-color: $color-beige;
+  text-align: start;
+  text-transform: none;
+  padding: 16px;
   border: 4px solid transparent;
 }
 
@@ -35,19 +38,16 @@
   @include text;
   display: flex;
   margin-left: 16px;
-  color: $color-brown;
 }
 
 .form__radio-text {
   @include title;
   text-transform: none;
-  color: $color-brown;
 }
 
 .form__checkbox-text {
   @include title;
   text-transform: none;
-  color: $color-brown;
 }
 
 .form__list {
@@ -75,12 +75,15 @@
 }
 
 .form__textarea {
+  @include title;
   display: flex;
   flex-direction: column;
+  text-transform: none;
+  text-align: start;
+  padding: 16px;
   width: 279px;
   height: 150px;
   margin-top: 20px;
-
   background-color: $color-beige;
   border: 4px solid transparent;
 }
@@ -96,11 +99,10 @@
 }
 
 .form__footnote {
+  @include text;
   display: block;
-  font-size: 12px;
-  line-height: 21px;
-  font-weight: 400;
   color: $color-brown;
+  font-size: 12px;
   opacity: 0.6;
   text-align: right;
   margin-top: 3px;

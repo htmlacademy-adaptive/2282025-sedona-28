@@ -5,8 +5,8 @@
 
 .search__title {
   @include title;
-  font-size: 21px;
   color: $color-black;
+  font-size: 21px;
 }
 
 .search__text {
@@ -16,13 +16,11 @@
 }
 
 .search__button {
+  @include title;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
-  text-transform: uppercase;
   padding: 12px;
   margin-top: 32px;
 }

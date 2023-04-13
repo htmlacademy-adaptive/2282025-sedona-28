@@ -17,6 +17,7 @@
 }
 
 .error__button {
+  @include title;
   width: 180px;
   padding: 10px;
   margin: 0 auto;

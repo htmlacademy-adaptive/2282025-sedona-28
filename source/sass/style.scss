@@ -10,19 +10,15 @@
 // Блоки компонентов
 // Главная страница
 @import "./block/index/advantages.scss";
-@import "./block/index/intro-full.scss";
 @import "./block/index/map.scss";
 @import "./block/index/search.scss";
 // Страница обратной связи
 @import "./block/form/error.scss";
-@import "./block/form/intro-form.scss";
 @import "./block/form/feedback.scss";
 @import "./block/form/success.scss";
 // Страница галереи
-@import "./block/catalog/body.scss";
 @import "./block/catalog/card-photo.scss";
 @import "./block/catalog/gallery.scss";
-@import "./block/catalog/intro-catalog.scss";
 @import "./block/catalog/video.scss";
 // Общие блоки
 @import "./block/common/intro-common.scss";
