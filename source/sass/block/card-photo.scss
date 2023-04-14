@@ -1,0 +1,32 @@
+.card-photo {
+  padding: 25px 20px;
+  border-top: 1px solid $color-light-gray;
+}
+
+.card-photo__link-image {
+  display: block;
+  width: 100%;
+}
+
+.card-photo__title {
+  @include title;
+  color: $color-black;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: start;
+  margin-top: 15px;
+}
+
+.card-photo__author {
+  @include text;
+  color: $color-brown;
+  text-align: start;
+  text-transform: none;
+}
+
+.card-photo__like {
+  @include text;
+  color: $color-black;
+  font-weight: 700;
+  text-align: start;
+}

@@ -1,0 +1,26 @@
+// search
+.search__wrapper {
+  padding: 38px 18px 49px 18px;
+}
+
+.search__title {
+  @include title;
+  color: $color-black;
+  font-size: 21px;
+}
+
+.search__text {
+  @include text;
+  color: $color-brown;
+  margin-top: 26px;
+}
+
+.search__button {
+  @include title;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 21px;
+  padding: 12px;
+  margin-top: 32px;
+}

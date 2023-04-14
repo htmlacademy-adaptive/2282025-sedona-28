@@ -1,0 +1,17 @@
+// social
+.social__list {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__item {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  background-color: $color-blue;
+}
+
+.social__link {
+  padding: 12px;
+}

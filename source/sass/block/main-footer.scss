@@ -1,0 +1,28 @@
+// Футер
+.main-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 33px 82px;
+}
+
+.main-footer__hashtag {
+  @include title;
+  color: $color-black;
+  font-size: 21px;
+}
+
+.main-footer__copyright {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.main-footer__copyright-title {
+  @include text;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  color: $color-black;
+}

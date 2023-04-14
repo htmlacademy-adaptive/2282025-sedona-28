@@ -1,0 +1,30 @@
+.success {
+  display: flex;
+  flex-direction: column;
+}
+
+.success__title {
+  @include title;
+}
+
+.success__text {
+  @include text;
+  margin-top: 36px;
+}
+
+.success__button {
+  @include title;
+  width: 280px;
+  padding: 10px;
+  margin: 20px auto;
+}
+
+.success__container {
+  padding: 44px 0 34px 0;
+  margin: 0 auto;
+}
+
+.success__background-grey {
+  display: flex;
+  background-color: $color-beige;
+}

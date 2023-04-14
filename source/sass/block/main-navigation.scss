@@ -1,0 +1,25 @@
+// Навигвция
+.main-navigation {
+  @include title;
+  display: flex;
+  flex-direction: column;
+  color: $color-black;
+}
+
+.main-navigation__list {
+  @include list-reset;
+}
+
+.main-navigation__item {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-blue;
+  text-align: center;
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.main-navigation__link {
+  text-decoration: none;
+  color: $color-white;
+  padding: 17px 20px 12px 20px;
+}
