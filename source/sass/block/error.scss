@@ -1,25 +1,27 @@
-// Error
-.error {
-  display: flex;
-  flex-direction: column;
-  padding: 45px 42px 35px 41px;
-}
+// Mobile
+@media (min-width: $mobile-width) {
+  .error {
+    display: flex;
+    flex-direction: column;
+    padding: 45px 42px 35px 41px;
+  }
 
-.error__title {
-  @include title;
-  color: $color-black;
-}
+  .error__title {
+    @include title;
+    color: $color-black;
+  }
 
-.error__text {
-  @include text;
-  color: $color-brown;
-  margin-top: 36px;
-}
+  .error__text {
+    @include text;
+    color: $color-brown;
+    margin-top: 36px;
+  }
 
-.error__button {
-  @include title;
-  width: 180px;
-  padding: 10px;
-  margin: 0 auto;
-  margin-top: 20px;
+  .error__button {
+    @include title;
+    width: 180px;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
 }

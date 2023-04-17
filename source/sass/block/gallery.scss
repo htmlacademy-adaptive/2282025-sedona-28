@@ -1,3 +1,6 @@
-.gallery {
-  @include list-reset;
+// Mobile
+@media (min-width: $mobile-width) {
+  .gallery {
+    @include list-reset;
+  }
 }

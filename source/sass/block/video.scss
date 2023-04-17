@@ -1,20 +1,22 @@
-// Видео
-.video__wrapper {
-  padding: 17px 20px 0 20px;
-  border-top: 1px solid $color-light-gray;
-}
+// Mobile
+@media (min-width: $mobile-width) {
+  .video__wrapper {
+    padding: 17px 20px 0 20px;
+    border-top: 1px solid $color-light-gray;
+  }
 
-.video__title {
-  @include title;
-  color: $color-black;
-}
+  .video__title {
+    @include title;
+    color: $color-black;
+  }
 
-.video__text {
-  @include text;
-  color: $color-brown;
-  margin-top: 38px;
-}
+  .video__text {
+    @include text;
+    color: $color-brown;
+    margin-top: 38px;
+  }
 
-.video__inner {
-  margin-top: 38px;
+  .video__inner {
+    margin-top: 38px;
+  }
 }

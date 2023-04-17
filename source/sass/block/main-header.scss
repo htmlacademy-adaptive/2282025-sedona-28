@@ -1,12 +1,32 @@
-// Шапка
-.main-header {
-  display: flex;
-  flex-direction: column;
+// Mobile
+@media (min-width: $mobile-width) {
+  .main-header {
+    display: flex;
+    flex-direction: column;
+    padding: 0 18px;
+    height: 56px;
+    position: relative;
+  }
+
+  .main-header__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: 96px;
+  }
 }
 
-.main-header__logo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+// Tablet
+@media (min-width: $tablet-width) {
+  .main-header {
+    flex-direction: row;
+    padding: 0;
+  }
 }
