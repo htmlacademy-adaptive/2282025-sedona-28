@@ -6,23 +6,36 @@
     flex-direction: column;
   }
 
-  .advantages__box {
+  .advantages__item {
+    &--gray {
+      padding: 0 18px;
+      background-color: $color-light-beige;
+    }
+  }
 
+  .advantages__box {
     &--img {
       background-color: $color-blue;
       padding: 54px 18px 40px 18px;
     }
 
     &--gray {
-      padding: 0;
-      background-color: $color-light-beige;
+      padding: 24px 0;
       border-top: 1px solid $color-gray;
     }
   }
 
   .advantages__image {
     display: block;
+    object-fit: cover;
     width: 100%;
+
+    &--reverse {
+      display: block;
+      object-fit: cover;
+      width: 100%;
+    }
+
   }
 
   .advantages__title {
@@ -56,6 +69,9 @@
 
   .advantages__sublist {
     @include list-reset;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
     padding: 23px 18px 46px 18px;
   }
 
@@ -85,22 +101,20 @@
     &--img {
       grid-column: 1/4;
     }
-  }
 
-  .advantages__item-container {
-    display: flex;
-
-    &--reverse {
-      flex-direction: row-reverse;
+    &--gray {
+      padding: 0;
     }
   }
 
-  .advantages__box {
-    min-width: 256px;
-    min-height: 256px;
+  .advantages__item-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 
+  .advantages__box {
     &--img {
-      padding: 52px 33px 31px 33px;
+      padding: 50px 22px 31px 20px;
     }
 
     &--gray {
@@ -110,9 +124,21 @@
     }
   }
 
+  .advantages__image {
+    grid-column: 2/4;
+
+    &--reverse {
+      display: block;
+      object-fit: cover;
+      width: 100%;
+      grid-column: 1/3;
+    }
+  }
+
   .advantages__sublist {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 0;
     padding: 0;
   }
 
@@ -120,8 +146,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 331px;
     padding: 60px 33px;
+  }
+
+  .advantages__subtext {
+    text-align: center;
   }
 
   .advantages__title {
@@ -134,17 +163,12 @@
 // Desctop
 @media (min-width: $desctop-width) {
   .advantages__box {
-    min-width: 400px;
-    min-height: 256px;
-
     &--img {
       padding: 52px 50px 51px 50px;
     }
 
     &--gray {
-      background-color: $color-light-beige;
       padding: 50px 52px;
-      border-top: none;
     }
   }
 }

@@ -2,29 +2,37 @@
 @media (min-width: $mobile-width) {
   .intro__logo {
     background-color: $color-gray;
-    background-image: url("../img/index/Frame7.jpg");
-    background-size: 100% auto;
+    background-image: url("../img/index/back-desktop.jpg");
+    background-position: top;
     background-repeat: no-repeat;
+    min-height: 158px;
     padding: 52px 0 67px 0;
 
     &--full {
       min-height: 389px;
       padding: 90px 0 85px 0;
     }
-
-
   }
 
   .intro__logo-img {
     display: block;
-    width: 282px;
+    width: 229px;
     height: auto;
     margin: 0 auto;
+
+    &--full {
+      display: block;
+      width: 282px;
+      height: auto;
+      margin: 0 auto;
+    }
   }
 
   .intro__wrapper {
     &--full {
-      padding: 32px 18px 32px 18px;
+      width: 272px;
+      padding: 32px 0;
+      margin: 0 auto;
     }
 
     &--catalog {
@@ -32,7 +40,9 @@
     }
 
     &--form {
-      padding: 36px 20px 28px 20px;
+      width: 280px;
+      padding: 36px 0 28px 0;
+      margin: 0 auto;
     }
   }
 
@@ -58,6 +68,9 @@
 // Tablet
 @media (min-width: $tablet-width) {
   .intro__logo {
+    min-height: 290px;
+    padding: 95px 0 117px 0;
+
     &--full {
       min-height: 518px;
       padding: 77px 0 91px 0;
@@ -65,17 +78,44 @@
   }
 
   .intro__logo-img {
-    width: 461px;
-  }
+    width: 457px;
 
-  .intro__wrapper {
     &--full {
-      padding: 47px 0 55px 0;
+      width: 461px;
     }
   }
 
+  .intro__wrapper {
+    width: 453px;
+    min-height: 247px;
+    padding: 66px 0 67px 0;
+    margin: 0 auto;
+
+    &--full {
+      width: 520px;
+      padding: 48px 0 55px 0;
+      margin: 0 auto;
+    }
+
+    &--catalog {
+      width: 458px;
+      padding: 66px 0 67px 0;
+      margin: 0 auto;
+    }
+    &--form {
+      width: 436px;
+      padding: 64px 0 108px 0;
+      margin: 0 auto;
+    }
+
+  }
+
   .intro__title {
-    font-size: 21px;
+    font-size: 30px;
+
+    &--full {
+      font-size: 21px;
+    }
   }
 }
 
@@ -93,7 +133,14 @@
 
   .intro__wrapper {
     &--full {
+      width: 485px;
       padding: 59px 0 44px 0;
+      margin: 0 auto;
+    }
+
+    &--catalog {
+      padding: 100px 0 65px 0;
+      margin: 0 auto;
     }
   }
 

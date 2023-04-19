@@ -18,6 +18,9 @@
       <nav class="main-navigation">
         <button class="main-navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none" viewBox="0 0 23 22">
+            <path fill="#81B3D2" d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" />
+          </svg>
         </button>
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
@@ -52,43 +55,44 @@
       <section class="feedback">
         <div class="feedback__wrapper">
           <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="form__group">
-              <h2 class="form__title">Представьтесь:</h2>
-              <ul class="form__list">
-                <li class="form__item">
-                  <label class="form__label-text" for="name">Имя*:</label>
-                  <input class="form__input-text" type="text" name="name" placeholder="Пётр" id="name" required>
-                </li>
-                <li class="form__item">
-                  <label class="form__label-text" for="surname">Фамилия*:</label>
-                  <input class="form__input-text" type="text" name="surname" placeholder="Пустота" id="surname"
-                    required>
-                </li>
-                <li class="form__item">
-                  <label class="form__label-text" for="patronymic">Отчество:</label>
-                  <input class="form__input-text" type="text" name="patronymic" placeholder="Викторович"
-                    id="patronymic">
-                </li>
-              </ul>
-            </fieldset>
+            <div class="form__group-container">
+              <fieldset class="form__group form__group--name">
+                <h2 class="form__title">Представьтесь:</h2>
+                <ul class="form__list">
+                  <li class="form__item">
+                    <label class="form__label-text" for="name">Имя*:</label>
+                    <input class="form__input-text" type="text" name="name" placeholder="Пётр" id="name" required>
+                  </li>
+                  <li class="form__item">
+                    <label class="form__label-text" for="surname">Фамилия*:</label>
+                    <input class="form__input-text" type="text" name="surname" placeholder="Пустота" id="surname"
+                      required>
+                  </li>
+                  <li class="form__item">
+                    <label class="form__label-text" for="patronymic">Отчество:</label>
+                    <input class="form__input-text" type="text" name="patronymic" placeholder="Викторович"
+                      id="patronymic">
+                  </li>
+                </ul>
+              </fieldset>
 
-            <fieldset class="form__group">
-              <h2 class="form__title">Контактная информация:</h2>
-              <ul class="form__list">
-                <li class="form__item">
-                  <label class="form__label-text" for="tel">Контактный телефон*:</label>
-                  <input class="form__input-text" type="tel" maxlength="11" pattern="[0-9]{1}[0-9]{3}[0-9]{7}"
-                    name="tel" placeholder="Введите телефон" id="tel" required>
-                </li>
-                <li class="form__item">
-                  <label class="form__label-text" for="email">Электронная почта*:</label>
-                  <input class="form__input-text" type="email" name="email" placeholder="Введите e-mail" id="email"
-                    required>
-                </li>
-              </ul>
-            </fieldset>
-
-            <fieldset class="form__group">
+              <fieldset class="form__group form__group--contact">
+                <h2 class="form__title">Контактная информация:</h2>
+                <ul class="form__list">
+                  <li class="form__item">
+                    <label class="form__label-text" for="tel">Контактный телефон*:</label>
+                    <input class="form__input-text" type="tel" maxlength="11" pattern="[0-9]{1}[0-9]{3}[0-9]{7}"
+                      name="tel" placeholder="Введите телефон" id="tel" required>
+                  </li>
+                  <li class="form__item">
+                    <label class="form__label-text" for="email">Электронная почта*:</label>
+                    <input class="form__input-text" type="email" name="email" placeholder="Введите e-mail" id="email"
+                      required>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <fieldset class="form__group form__group--impression">
               <h2 class="form__title">Ваше общее впечатление:</h2>
               <ul class="form__radio-list">
                 <li class="form__radio-item">
@@ -115,7 +119,7 @@
               </ul>
             </fieldset>
 
-            <fieldset class="form__group">
+            <fieldset class="form__group form__group--place">
               <h2 class="form__title">Посещенные достопримечательности:</h2>
               <ul class="form__checkbox-list">
                 <li class="form__checkbox-item">
@@ -148,13 +152,15 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form__group">
+            <fieldset class="form__group form__group--comment">
               <h2 class="form__title">Опишите свои эмоции:</h2>
               <textarea class="form__textarea" name="comment" placeholder="Опишите подробно все свои восторги "
                 id="message"></textarea>
             </fieldset>
-            <button class="form__sent button" type="submit">Отправить отзыв</button>
-            <span class="form__footnote">* — Обязательные поля</span>
+            <div class="form__group-button">
+              <button class="form__sent button" type="submit">Отправить отзыв</button>
+              <span class="form__footnote">* — Обязательные поля</span>
+            </div>
           </form>
         </div>
       </section>

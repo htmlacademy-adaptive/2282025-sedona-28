@@ -1,8 +1,6 @@
 // Mobile
 @media (min-width: $mobile-width) {
   .main-header {
-    display: flex;
-    flex-direction: column;
     padding: 0 18px;
     height: 56px;
     position: relative;
@@ -26,7 +24,6 @@
 // Tablet
 @media (min-width: $tablet-width) {
   .main-header {
-    flex-direction: row;
     padding: 0;
   }
 }

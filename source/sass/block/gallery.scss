@@ -4,3 +4,26 @@
     @include list-reset;
   }
 }
+
+// Tablet
+@media (min-width: $tablet-width) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .photo__wrapper {
+    padding: 0 60px;
+  }
+}
+
+// Desctop
+@media (min-width: $desctop-width) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .photo__wrapper {
+    padding: 0;
+  }
+}

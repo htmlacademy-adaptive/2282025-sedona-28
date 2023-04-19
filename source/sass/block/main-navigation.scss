@@ -8,10 +8,9 @@
   }
 
   .main-navigation__list {
+    @include list-reset;
     display: flex;
     flex-direction: column;
-    @include list-reset;
-    padding: 0 18px;
     display: none;
   }
 
@@ -24,6 +23,7 @@
   }
 
   .main-navigation__link {
+    display: block;
     text-decoration: none;
     color: $color-white;
     padding: 17px 20px 12px 20px;
@@ -47,14 +47,11 @@
   .main-navigation {
     @include text;
     font-weight: 700;
-    width: 100%;
   }
 
   .main-navigation__list {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    width: 100%;
-    padding: 0;
 
     &::after {
       content: "";
@@ -65,12 +62,12 @@
   }
 
   .main-navigation__item {
-    width: 100%;
     background-color: $color-white;
     box-shadow: none;
   }
 
   .main-navigation__link {
+    display: block;
     color: $color-black;
     padding: 18px 20px 17px 20px;
   }
