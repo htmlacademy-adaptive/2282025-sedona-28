@@ -1,10 +1,5 @@
 // Mobile
 @media (min-width: $mobile-width) {
-  .success {
-    display: flex;
-    flex-direction: column;
-  }
-
   .success__title {
     @include title;
   }
@@ -22,6 +17,7 @@
   }
 
   .success__container {
+    width: 244px;
     padding: 44px 0 34px 0;
     margin: 0 auto;
   }

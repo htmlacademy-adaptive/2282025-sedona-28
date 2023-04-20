@@ -1,0 +1,46 @@
+//Desctop
+@media (min-width: $desctop-width) {
+  .form {
+    padding: 0 120px;
+  }
+
+  .form__group--name,
+  .form__group--contact {
+    width: 430px;
+  }
+
+  .form__group--impression {
+    padding-top: 71px;
+  }
+
+  .form__radio-list {
+    width: 960px;
+    gap: 28px;
+    justify-content: space-around;
+    margin: 0;
+  }
+
+  .form__group--place {
+    padding-top: 56px;
+  }
+
+  .form__checkbox-list {
+    width: 960px;
+    justify-content: space-between;
+    column-gap: 64px;
+    margin: 0;
+  }
+
+  .form__checkbox-item {
+    width: 184px;
+  }
+
+  .form__group--comment {
+    padding: 0 96px;
+    padding-top: 56px;
+  }
+
+  .form__group-button {
+    padding: 48px 96px 64px 96px;
+  }
+}

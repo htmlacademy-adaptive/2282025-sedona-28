@@ -1,0 +1,19 @@
+// Desctop
+@media (min-width: $desctop-width) {
+  .gallery__card {
+    position: relative;
+  }
+
+  .card-photo__container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba($color-black, $alpha: 0.3);
+  }
+
+  .card-photo__title,
+  .card-photo__author,
+  .card-photo__like {
+    color: $color-white;
+  }
+}

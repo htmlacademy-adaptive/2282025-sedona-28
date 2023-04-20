@@ -1,8 +1,13 @@
 // Mobile
 @media (min-width: $mobile-width) {
   .video__wrapper {
-    padding: 17px 20px 0 20px;
     border-top: 1px solid $color-light-gray;
+  }
+
+  .video__slogan {
+    width: 266px;
+    padding: 17px 0 38px 0;
+    margin: 0 auto;
   }
 
   .video__title {
@@ -17,7 +22,6 @@
   }
 
   .video__inner {
-    margin-top: 38px;
     position: relative;
   }
 
@@ -28,53 +32,9 @@
     max-height: 177px;
   }
 
-  .video__slogan {
-    width: 266px;
-    margin: 0 auto;
-  }
-
   .video__play {
     position: absolute;
     right: 50%;
     top: 50%;
-  }
-}
-
-// Tablet
-@media (min-width: $tablet-width) {
-  .video__wrapper {
-    padding: 58px 60px 40px 60px;
-    border: none;
-  }
-
-  .video__slogan {
-    width: 445px;
-    margin: 0 auto;
-  }
-
-  .video__inner {
-    margin-top: 70px;
-  }
-
-  .video__image {
-    max-height: 500px;
-  }
-
-  .video__title {
-    font-size: 30px;
-  }
-}
-
-// Desctop
-@media (min-width: $desctop-width) {
-  .video__wrapper {
-    padding: 62px 0 84px 0;
-    border: none;
-  }
-
-  .video__image {
-    width: 681px;
-    max-height: 500px;
-    margin: 0 auto;
   }
 }

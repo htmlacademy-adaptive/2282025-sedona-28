@@ -2,6 +2,8 @@
 @media (min-width: $mobile-width) {
   .gallery {
     @include list-reset;
+    display: flex;
+    flex-direction: column;
   }
 }
 
