@@ -1,0 +1,39 @@
+// Desctop
+@media (min-width: $desctop-width) {
+  .intro__logo {
+    padding: 101px 0 120px 0;
+
+    &--full {
+      padding: 78px 0 90px 0;
+    }
+  }
+
+  .intro__logo-img {
+    width: 460px;
+
+    &--full {
+      width: 459px;
+    }
+  }
+
+  .intro__wrapper {
+    &--full {
+      max-width: 485px;
+      padding: 59px 0 44px 0;
+    }
+
+    &--catalog {
+      max-width: 485px;
+      padding: 100px 0 65px 0;
+    }
+
+    &--form {
+      max-width: 436px;
+      padding: 115px 0 68px 0;
+    }
+  }
+
+  .intro__title {
+    font-size: 21px;
+  }
+}

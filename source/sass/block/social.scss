@@ -2,7 +2,8 @@
 .social__list {
   @include list-reset;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 6px;
 }
 
 .social__item {

@@ -1,0 +1,12 @@
+// Tablet
+@media (min-width: $tablet-width) {
+  .search__wrapper {
+    max-width: 435px;
+    padding: 60px 0 44px 0;
+    margin: 0 auto;
+  }
+
+  .search__button {
+    max-width: 458px;
+  }
+}

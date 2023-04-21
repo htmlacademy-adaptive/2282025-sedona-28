@@ -1,3 +1,31 @@
-.gallery {
-  @include list-reset;
+// Mobile
+@media (min-width: $mobile-width) {
+  .gallery {
+    @include list-reset;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+// Tablet
+@media (min-width: $tablet-width) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .photo__wrapper {
+    padding: 0 60px;
+  }
+}
+
+// Desctop
+@media (min-width: $desctop-width) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .photo__wrapper {
+    padding: 0;
+  }
 }

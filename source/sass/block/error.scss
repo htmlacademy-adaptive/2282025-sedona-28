@@ -1,25 +1,35 @@
-// Error
-.error {
-  display: flex;
-  flex-direction: column;
-  padding: 45px 42px 35px 41px;
-}
+// Mobile
+@media (min-width: $mobile-width) {
+  .error__inner {
+    padding: 45px 0 35px 0;
+  }
 
-.error__title {
-  @include title;
-  color: $color-black;
-}
+  .error__container {
+    display: flex;
+    flex-direction: column;
+    width: 237px;
+    padding: 0 0 28px 0;
+    margin: 0 auto;
+  }
 
-.error__text {
-  @include text;
-  color: $color-brown;
-  margin-top: 36px;
-}
+  .error__title {
+    @include title;
+    color: $color-black;
+  }
 
-.error__button {
-  @include title;
-  width: 180px;
-  padding: 10px;
-  margin: 0 auto;
-  margin-top: 20px;
+  .error__text {
+    @include text;
+    color: $color-brown;
+    margin-top: 36px;
+  }
+
+  .error__button {
+    @include title;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    padding: 10px;
+    margin: 0 auto;
+  }
 }

@@ -1,74 +1,90 @@
-// advantages
-.advantages__box {
-  padding: 24px 18px 24px 18px;
-
-  &--img {
-    background-color: $color-blue;
-    padding: 37px 18px;
+// Mobile
+@media (min-width: $mobile-width) {
+  .advantages__list {
+    @include list-reset;
+    display: flex;
+    flex-direction: column;
   }
 
-  &--gray {
-    background-color: $color-light-beige;
-    border-top: 1px solid $color-gray;
+  .advantages__item {
+    &--gray {
+      padding: 0 18px;
+      background-color: $color-light-beige;
+    }
   }
-}
 
-.advantages__image {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
+  .advantages__box {
+    &--img {
+      background-color: $color-blue;
+      padding: 33px 18px 40px 18px;
+    }
 
-.advantages__list {
-  @include list-reset;
-}
-
-
-.advantages__title {
-  @include title;
-  color: $color-black;
-
-  &--img {
-    color: $color-white;
+    &--gray {
+      padding: 24px 0;
+      border-top: 1px solid $color-gray;
+    }
   }
-}
 
-.advantages__number {
-  @include text;
-  color: $color-brown;
-  margin-top: 17px;
+  .advantages__image {
+    display: block;
+    object-fit: cover;
+    width: 100%;
 
-  &--img {
-    color: $color-white;
+    &--reverse {
+      display: block;
+      object-fit: cover;
+      width: 100%;
+    }
   }
-}
 
-.advantages__text {
-  @include text;
-  color: $color-brown;
-  margin-top: 17px;
+  .advantages__title {
+    @include title;
+    color: $color-black;
 
-  &--img {
-    color: $color-white;
+    &--img {
+      color: $color-white;
+    }
   }
-}
 
-.advantages__sublist {
-  @include list-reset;
-  padding: 23px 18px 46px 18px;
-}
+  .advantages__number {
+    @include text;
+    color: $color-brown;
+    margin-top: 17px;
 
-.advantages__subtitle {
-  @include title;
-  color: $color-black;
-  text-align: start;
-  margin-top: 8px;
-}
+    &--img {
+      color: $color-white;
+    }
+  }
 
-.advantages__subtext {
-  @include text;
-  color: $color-brown;
-  text-align: start;
-  margin-top: 16px;
+  .advantages__text {
+    @include text;
+    color: $color-brown;
+    margin-top: 17px;
+
+    &--img {
+      color: $color-white;
+    }
+  }
+
+  .advantages__sublist {
+    @include list-reset;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 23px 18px 46px 18px;
+  }
+
+  .advantages__subtitle {
+    @include title;
+    color: $color-black;
+    text-align: start;
+    margin-top: 8px;
+  }
+
+  .advantages__subtext {
+    @include text;
+    color: $color-brown;
+    text-align: start;
+    margin-top: 16px;
+  }
 }

@@ -1,0 +1,19 @@
+// Tablet
+@media (min-width: $tablet-width) {
+  .success__inner {
+    width: 640px;
+    margin: 0 auto;
+  }
+
+  .success__container {
+    width: 444px;
+    padding: 53px 0 30px 0;
+    margin: 0 auto;
+  }
+
+  .success__button {
+    width: 458px;
+    padding: 10px;
+    margin: 44px auto;
+  }
+}

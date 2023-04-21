@@ -1,0 +1,10 @@
+// Tablet
+@media (min-width: $tablet-width) {
+  .main-header {
+    padding: 0;
+  }
+
+  .main-header__logo {
+    z-index: 2;
+  }
+}

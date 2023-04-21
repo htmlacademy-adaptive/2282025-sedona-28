@@ -1,0 +1,19 @@
+// Desctop
+@media (min-width: $desctop-width) {
+  .video__wrapper {
+    border: none;
+  }
+
+  .video__slogan {
+    padding: 66px 0 68px 0;
+  }
+
+  .video__inner {
+    padding-bottom: 84px;
+  }
+
+  .video__image {
+    width: 681px;
+    margin: 0 auto;
+  }
+}

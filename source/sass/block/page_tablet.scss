@@ -1,0 +1,13 @@
+// Tablet
+@media (min-width: $tablet-width) {
+  .page__body {
+    background-color: $color-beige;
+  }
+
+  .page__container {
+    width: 100%;
+    padding: 0;
+    background-color: $color-white;
+    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+  }
+}
