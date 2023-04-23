@@ -2,6 +2,7 @@
 @media (min-width: $mobile-width) {
   .search__wrapper {
     max-width: 262px;
+    width: 100%;
     padding: 38px 0 32px 0;
     margin: 0 auto;
   }
@@ -10,12 +11,12 @@
     @include title;
     color: $color-black;
     font-size: 21px;
+    margin-bottom: 26px;
   }
 
   .search__text {
     @include text;
     color: $color-brown;
-    margin-top: 26px;
   }
 
   .search__button {
@@ -26,6 +27,7 @@
     font-size: 21px;
     padding: 12px;
     max-width: 284px;
+    width: 100%;
     margin: 0 auto;
   }
 }

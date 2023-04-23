@@ -15,27 +15,26 @@
         <img class="main-header__logo-image" src="img/index/sedona-logo.svg" width="185" height="96"
           alt="Логотип сайта Седона.">
       </a>
-      <nav class="main-navigation">
+      <nav class="main-navigation  main-navigation--closed main-navigation--nojs"> <!--closed  opened-->
         <button class="main-navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none" viewBox="0 0 23 22">
-            <path fill="#81B3D2" d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" />
-          </svg>
         </button>
-        <ul class="main-navigation__list">
-          <li class="main-navigation__item">
-            <a class="main-navigation__link main-navigation__link--current" href="index.html">Главная</a>
-          </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="catalog.html">Фото и видео</a>
-          </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="form.html">Форма отзыва</a>
-          </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="https://htmlacademy.ru/">HTML Academy</a>
-          </li>
-        </ul>
+        <div class="main-navigation__wrapper">
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item">
+              <a class="main-navigation__link main-navigation__link--current" href="index.html">Главная</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="catalog.html">Фото и видео</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="https://htmlacademy.ru/">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main class="main-container">
@@ -46,7 +45,8 @@
             alt="Приветственный логотип города Седона.">
         </div>
         <div class="intro__wrapper intro__wrapper--full">
-          <p class="intro__title intro__title--full">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="intro__title intro__title--full">Седона — небольшой<br> городок в Аризоне, заслуживающий большего!
+          </p>
           <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
       </section>
@@ -56,7 +56,7 @@
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--img">
               <div class="advantages__item-container">
-                <div class="advantages__box advantages__box--img">
+                <div class="advantages__box advantages__box--img-one">
                   <h3 class="advantages__title advantages__title--img">Настоящий городок</h3>
                   <p class="advantages__number advantages__number--img">-№1-</p>
                   <p class="advantages__text advantages__text--img">Седона — не аттракцион для туристов, там течёт
@@ -67,16 +67,31 @@
               </div>
               <ul class="advantages__sublist">
                 <li class="advantages__subitem advantages__subitem--house">
-                  <h4 class="advantages__subtitle">Жилье</h4>
-                  <p class="advantages__subtext">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                  <div class="advantages__subitem-container">
+                    <div class="advantages__subbox-svg advantages__subbox-svg--house"></div>
+                    <div class="advantages__subbox-text">
+                      <h4 class="advantages__subtitle">Жилье</h4>
+                      <p class="advantages__subtext">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                    </div>
+                  </div>
                 </li>
                 <li class="advantages__subitem advantages__subitem--food">
-                  <h4 class="advantages__subtitle">Еда</h4>
-                  <p class="advantages__subtext">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+                  <div class="advantages__subitem-container">
+                    <div class="advantages__subbox-svg advantages__subbox-svg--food"></div>
+                    <div class="advantages__subbox-text">
+                      <h4 class="advantages__subtitle">Еда</h4>
+                      <p class="advantages__subtext">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+                    </div>
+                  </div>
                 </li>
-                <li class="advantages__subitem advantages__subitem--souvenir">
-                  <h4 class="advantages__subtitle">Сувениры</h4>
-                  <p class="advantages__subtext">Не только китайского, но и местного производства!</p>
+                <li class="advantages__subitem  advantages__subitem--souvenir">
+                  <div class="advantages__subitem-container advantages__subitem-container--souvenir">
+                    <div class="advantages__subbox-svg advantages__subbox-svg--souvenir"></div>
+                    <div class="advantages__subbox-text">
+                      <h4 class="advantages__subtitle">Сувениры</h4>
+                      <p class="advantages__subtext">Не только китайского, но и местного производства!</p>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </li>
@@ -88,29 +103,29 @@
                   <p class="advantages__text advantages__text--img">Да, по нему можно пройти! Если вы осмелитесь,
                     конечно</p>
                 </div>
-                <img class="advantages__image advantages__image--reverse" src="img/index/photo-bridge@1x.jpg" width="512" height="256"
-                  alt="Мост дьявола.">
+                <img class="advantages__image advantages__image--reverse" src="img/index/photo-bridge@1x.jpg"
+                  width="512" height="256" alt="Мост дьявола.">
               </div>
             </li>
             <li class="advantages__item advantages__item--gray">
-              <div class="advantages__box advantages__box--gray">
+              <div class="advantages__box advantages__box--gray-one">
                 <h3 class="advantages__title">Небольшая площадь</h3>
                 <p class="advantages__number">-№3-</p>
-                <p class="advantages__text">Все интересные места находятся очень близко</p>
+                <p class="advantages__text">Все интересные места находятся<br> очень близко</p>
               </div>
             </li>
             <li class="advantages__item advantages__item--gray">
               <div class="advantages__box advantages__box--gray">
                 <h3 class="advantages__title">Красивая дорога</h3>
                 <p class="advantages__number">-№4-</p>
-                <p class="advantages__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                <p class="advantages__text">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
               </div>
             </li>
             <li class="advantages__item advantages__item--gray">
               <div class="advantages__box advantages__box--gray">
                 <h3 class="advantages__title">Мало туристов</h3>
                 <p class="advantages__number">-№5-</p>
-                <p class="advantages__text">Большинство едет в Гранд Каньон и толпится там</p>
+                <p class="advantages__text">Большинство едет в Гранд Каньон<br> и толпится там</p>
               </div>
             </li>
           </ul>
@@ -127,7 +142,10 @@
       <section class="map">
         <div class="map__wrapper">
           <h2 class="visually-hidden">Мы на карте</h2>
-          <img class="map__image" src="img/index/map-mobile.jpg.jpg" width="320" height="350" alt="Карта.">
+          <iframe class="map__google"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d352127.4622308356!2d-111.81813782191279!3d34.91890044135414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1682280011156!5m2!1sru!2sru"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </section>
     </main>
@@ -181,6 +199,7 @@
       </div>
     </footer>
   </div>
+  <script src="../js/button-open-close.js"></script>
 </body>
 
 </html>

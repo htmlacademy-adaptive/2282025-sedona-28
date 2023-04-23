@@ -1,5 +1,23 @@
+// Ступенька у блока преимуществ
+@media (min-width: $mobile-width) and (max-width: 420px) {
+  .advantages__wrapper::before {
+    content: "";
+    position: absolute;
+    top: -16px;
+    right: 0;
+    width: 100%;
+    height: 37px;
+    background-image: url("../img/index/advantages-triangle.svg");
+    background-position: center;
+  }
+}
+
 // Mobile
 @media (min-width: $mobile-width) {
+  .advantages__wrapper {
+    position: relative;
+  }
+
   .advantages__list {
     @include list-reset;
     display: flex;
@@ -14,14 +32,24 @@
   }
 
   .advantages__box {
-    &--img {
+    &--img-one {
+      padding: 54px 18px 40px 18px;
       background-color: $color-blue;
-      padding: 33px 18px 40px 18px;
+    }
+
+    &--img {
+      padding: 37px 18px;
+      background-color: $color-blue;
     }
 
     &--gray {
       padding: 24px 0;
       border-top: 1px solid $color-gray;
+    }
+
+    &--gray-one {
+      padding: 24px 0;
+      border-top: none;
     }
   }
 
@@ -40,6 +68,7 @@
   .advantages__title {
     @include title;
     color: $color-black;
+    margin-bottom: 11px;
 
     &--img {
       color: $color-white;
@@ -49,7 +78,7 @@
   .advantages__number {
     @include text;
     color: $color-brown;
-    margin-top: 17px;
+    margin-bottom: 17px;
 
     &--img {
       color: $color-white;
@@ -59,7 +88,6 @@
   .advantages__text {
     @include text;
     color: $color-brown;
-    margin-top: 17px;
 
     &--img {
       color: $color-white;
@@ -74,17 +102,48 @@
     padding: 23px 18px 46px 18px;
   }
 
+  .advantages__subitem-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 7px;
+  }
+
+  .advantages__subbox-svg {
+    display: block;
+    background-repeat: no-repeat;
+    max-width: 40px;
+    width: 100%;
+    height: auto;
+    background-size: contain;
+
+    &--house {
+      background-image: url("../img/index/house.svg");
+    }
+
+    &--food {
+      background-image: url("../img/index/food.svg");
+    }
+
+    &--souvenir {
+      background-image: url("../img/index/souvenir.svg");
+    }
+  }
+
+  .advantages__subbox-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
   .advantages__subtitle {
     @include title;
     color: $color-black;
-    text-align: start;
-    margin-top: 8px;
   }
 
   .advantages__subtext {
     @include text;
     color: $color-brown;
     text-align: start;
-    margin-top: 16px;
   }
 }

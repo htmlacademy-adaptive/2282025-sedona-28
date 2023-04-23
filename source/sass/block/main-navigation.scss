@@ -1,22 +1,43 @@
 // Mobile
 @media (min-width: $mobile-width) {
-  .main-navigation {
+  .main-navigation__wrapper {
     @include title;
     margin: 0;
     padding: 0;
-    position: absolute;
-    left: 0;
     width: 100%;
+    position: relative;
+    z-index: 1;
   }
+
+  .main-navigation--opened .main-navigation__wrapper::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 7px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+  }
+
 
   .main-navigation__list {
     @include list-reset;
-    display: none;
+    display: flex;
+    flex-direction: column;
   }
 
   .main-navigation__item {
     background-color: $color-blue;
-    box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+  }
+
+  .main-navigation__item:first-child {
+    border-top: none;
+  }
+
+  .main-navigation__item:last-child {
+    border-bottom: none;
   }
 
   .main-navigation__link {
@@ -31,11 +52,45 @@
     position: absolute;
     border: 2px solid transparent;
     background: transparent;
-    min-height: 22px;
+    min-height: 23px;
     min-width: 23px;
     top: 17px;
     right: 20px;
     margin: 0;
     padding: 0;
+    cursor: pointer;
+  }
+
+  .main-navigation--closed .main-navigation__toggle::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 23px;
+    height: 23px;
+    background-image: url("../img/index/icon--open.svg");
+    cursor: pointer;
+  }
+
+  .main-navigation--opened .main-navigation__toggle::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 23px;
+    height: 23px;
+    z-index: 2;
+    background-image: url("../img/index/icon--closed.svg");
+    cursor: pointer;
+  }
+
+  .main-navigation--nojs .main-navigation__toggle {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-navigation--closed .main-navigation__list {
+    display: none;
   }
 }

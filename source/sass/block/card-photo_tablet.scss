@@ -15,6 +15,10 @@
     grid-column: 1/-1;
   }
 
+  .card-photo__link-image {
+    margin: 0;
+  }
+
   .card-photo__container {
     display: flex;
     justify-content: space-between;

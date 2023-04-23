@@ -1,6 +1,6 @@
 // Tablet
 @media (min-width: $tablet-width) {
-  .main-navigation {
+  .main-navigation__wrapper {
     @include text;
     font-weight: 700;
   }
@@ -19,7 +19,7 @@
 
   .main-navigation__item {
     background-color: $color-white;
-    box-shadow: none;
+    border: none;
   }
 
   .main-navigation__link {

@@ -9,10 +9,11 @@
   }
 
   .intro__logo-img {
-    width: 460px;
+    max-width: 460px;
+    width: 100%;
 
     &--full {
-      width: 459px;
+      max-width: 460px;
     }
   }
 

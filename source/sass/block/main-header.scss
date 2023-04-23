@@ -1,8 +1,7 @@
 // Mobile
 @media (min-width: $mobile-width) {
   .main-header {
-    padding: 0 18px;
-    height: 56px;
+    min-height: 56px;
     position: relative;
   }
 
@@ -13,6 +12,7 @@
     align-items: center;
     position: absolute;
     left: 50%;
-    margin-left: -92px;
+    transform: translateX(-50%);
+    z-index: 1;
   }
 }
