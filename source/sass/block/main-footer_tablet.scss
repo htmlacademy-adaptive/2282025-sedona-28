@@ -5,6 +5,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 36px 60px;
+    max-width: 648px;
+    padding: 36px 0;
+  }
+
+  .main-footer__hashtag {
+    padding: 0;
   }
 }

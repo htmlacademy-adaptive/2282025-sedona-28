@@ -19,9 +19,10 @@
 
   .main-footer__copyright {
     display: flex;
-    gap: 12px;
+    flex-wrap: wrap;
     justify-content: center;
     text-decoration: none;
+    gap: 12px;
   }
 
   .main-footer__copyright-title {

@@ -12,9 +12,15 @@
   }
 }
 
-// Mobile
+// Tablet
 @media (min-width: $tablet-width) {
   .map__wrapper {
-    padding: 49px 15px 8px 15px;
+    padding: 55px 0 0 0;
+  }
+}
+// Desctop
+@media (min-width: $desctop-width) {
+  .map__wrapper {
+    padding: 66px 0 0 0;
   }
 }

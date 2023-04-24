@@ -1,1 +1,6 @@
 // Desctop
+@media (min-width: $desctop-width) {
+  .search__title {
+    font-size: 30px;
+  }
+}

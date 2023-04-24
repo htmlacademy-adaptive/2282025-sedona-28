@@ -3,6 +3,7 @@
   .main-navigation__wrapper {
     @include text;
     font-weight: 700;
+    z-index: 1;
   }
 
   .main-navigation__list {
@@ -26,6 +27,31 @@
     display: block;
     color: $color-black;
     padding: 18px 20px 17px 20px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-blue;
+    }
+
+    &:focus {
+      background-color: $color-white;
+      outline: 3px solid $color-blue;
+    }
+
+    &:active {
+      background-color: $color-white;
+      color: $color-blue;
+    }
+
+    &:disabled {
+      background-color: $color-white;
+      color: rgba($color: $color-black, $alpha: 0.3);
+    }
+  }
+
+  .main-navigation__link--current {
+    color: $color-light-beige;
   }
 
   .main-navigation__toggle {

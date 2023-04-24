@@ -111,6 +111,7 @@
   .advantages__subbox-svg {
     display: block;
     background-repeat: no-repeat;
+    min-width: 40px;
     max-width: 40px;
     width: 100%;
     height: auto;
@@ -138,6 +139,7 @@
 
   .advantages__subtitle {
     @include title;
+    text-align: start;
     color: $color-black;
   }
 
@@ -146,4 +148,16 @@
     color: $color-brown;
     text-align: start;
   }
+
+  .adesctop {
+    display: none;
+  }
+
+  .atablet {
+    display: none;
+  }
+}
+
+.amobile {
+  display: block;
 }

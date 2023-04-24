@@ -1,18 +1,52 @@
 // Desctop
 @media (min-width: $desctop-width) {
+  .advantages__item {
+    &--gray {
+      padding: 52px 50px;
+    }
+  }
+
   .advantages__box {
-    &--img {
+    &--img-one {
       min-width: 400px;
       padding: 52px 50px 51px 50px;
     }
 
-    &--gray {
-      padding: 50px 52px;
+    &--img {
+      padding: 52px 50px 51px 50px;
+    }
+  }
+
+  .advantages__subitem {
+    min-height: 330px;
+
+    &--house {
+      padding: 69px 50px;
+    }
+
+    &--food {
+      padding: 72px 50px 71px 50px;
+    }
+
+    &--souvenir {
+      padding: 69px 50px 67px;
     }
   }
 
   .advantages__subitem-container {
     max-width: 300px;
     gap: 26px;
+  }
+
+  .adesctop {
+    display: block;
+  }
+
+  .atablet {
+    display: none;
+  }
+
+  .amobile {
+    display: none;
   }
 }
