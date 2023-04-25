@@ -30,3 +30,12 @@
   left: 0;
   margin: auto;
 }
+
+@mixin separator-form {
+  content: "";
+  position: absolute;
+  width: 123px;
+  height: 1px;
+  background-color: $color-gray;
+  top: 0;
+}

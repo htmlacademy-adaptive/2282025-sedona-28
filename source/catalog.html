@@ -15,32 +15,36 @@
         <img class="main-header__logo-image" src="img/index/sedona-logo.svg" width="185" height="96"
           alt="Логотип сайта Седона.">
       </a>
-      <nav class="main-navigation">
+      <nav class="main-navigation  main-navigation--closed main-navigation--nojs"> <!--opened -->
         <button class="main-navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
-          <svg class="main-navigation__toggle-open" xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none" viewBox="0 0 23 22">
+          <svg class="main-navigation__toggle-open" xmlns="http://www.w3.org/2000/svg" width="23" height="22"
+            fill="none" viewBox="0 0 23 22">
             <path fill="currentColor" d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" />
           </svg>
-          <svg class="main-navigation__toggle-close" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="main-navigation__toggle-close" width="23" height="22" viewBox="0 0 23 22" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <path
               d="M23 2.77477L20.0991 0L11.5 8.22522L2.9009 0L0 2.77477L8.5991 11L0 19.2252L2.9009 22L11.5 13.7748L20.0991 22L23 19.2252L14.4009 11L23 2.77477Z"
               fill="currentColor" />
           </svg>
         </button>
-        <ul class="main-navigation__list">
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link  main-navigation__link--current" href="catalog.html">Фото и видео</a>
-          </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="form.html">Форма отзыва</a>
-          </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="https://htmlacademy.ru/">HTML Academy</a>
-          </li>
-        </ul>
+        <div class="main-navigation__wrapper">
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link  main-navigation__link--current" href="catalog.html">Фото и видео</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="https://htmlacademy.ru/">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main class="main-container main-container--gray">
@@ -62,7 +66,7 @@
           <ul class="gallery">
             <li class="gallery__card card-photo card-photo--stretch">
               <a class="card-photo__link" href="#">
-                <img class="card-photo__link-image" src="img/catalog/photo-1-desktop.jpg" width="1200" height="400"
+                <img class="card-photo__link-image card-photo__link-image--stretch" src="img/catalog/photo-1-desktop.jpg" width="1200" height="400"
                   alt="Вечерняя дорога.">
               </a>
               <div class="card-photo__container">
@@ -133,7 +137,7 @@
           </div>
           <div class="video__inner">
             <img class="video__image" src="img/catalog/video-desktop.jpg" width="800" height="500" alt="Презентация.">
-            <button class="video__play"></button>
+            <button class="video__play" type="button"></button>
           </div>
         </div>
       </section>

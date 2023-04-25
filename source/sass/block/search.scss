@@ -29,5 +29,24 @@
     max-width: 284px;
     width: 100%;
     margin: 0 auto;
+
+    &:hover {
+      background-color: $color-blue-hover;
+    }
+
+    &:focus {
+      outline: none;
+      background: linear-gradient(180deg, $color-blue 0%, $color-blue-down 100%);
+    }
+
+    &:active {
+      outline: none;
+      background: linear-gradient(180deg, $color-beige -165%, $color-blue 45%);
+    }
+
+    &:disabled {
+      background-color: $color-blue-down;
+      color: rgba($color: $color-white, $alpha: 0.3);
+    }
   }
 }

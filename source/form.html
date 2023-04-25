@@ -15,27 +15,36 @@
         <img class="main-header__logo-image" src="img/index/sedona-logo.svg" width="185" height="96"
           alt="Логотип сайта Седона.">
       </a>
-      <nav class="main-navigation">
+      <nav class="main-navigation  main-navigation--closed main-navigation--nojs"> <!--opened -->
         <button class="main-navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none" viewBox="0 0 23 22">
-            <path fill="#81B3D2" d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" />
+          <svg class="main-navigation__toggle-open" xmlns="http://www.w3.org/2000/svg" width="23" height="22"
+            fill="none" viewBox="0 0 23 22">
+            <path fill="currentColor" d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" />
+          </svg>
+          <svg class="main-navigation__toggle-close" width="23" height="22" viewBox="0 0 23 22" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M23 2.77477L20.0991 0L11.5 8.22522L2.9009 0L0 2.77477L8.5991 11L0 19.2252L2.9009 22L11.5 13.7748L20.0991 22L23 19.2252L14.4009 11L23 2.77477Z"
+              fill="currentColor" />
           </svg>
         </button>
-        <ul class="main-navigation__list">
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="catalog.html">Фото и видео</a>
-          </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link main-navigation__link--current" href="form.html">Форма отзыва</a>
-          </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="https://htmlacademy.ru/">HTML Academy</a>
-          </li>
-        </ul>
+        <div class="main-navigation__wrapper">
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="catalog.html">Фото и видео</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link  main-navigation__link--current" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="https://htmlacademy.ru/">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main class="main-container">
@@ -79,12 +88,12 @@
               <fieldset class="form__group form__group--contact">
                 <h2 class="form__title">Контактная информация:</h2>
                 <ul class="form__list">
-                  <li class="form__item">
+                  <li class="form__item  form__item--svg-tel">
                     <label class="form__label-text" for="tel">Контактный телефон*:</label>
                     <input class="form__input-text" type="tel" maxlength="11" pattern="[0-9]{1}[0-9]{3}[0-9]{7}"
                       name="tel" placeholder="Введите телефон" id="tel" required>
                   </li>
-                  <li class="form__item">
+                  <li class="form__item  form__item--svg-email">
                     <label class="form__label-text" for="email">Электронная почта*:</label>
                     <input class="form__input-text" type="email" name="email" placeholder="Введите e-mail" id="email"
                       required>
@@ -97,21 +106,21 @@
               <ul class="form__radio-list">
                 <li class="form__radio-item">
                   <label class="form__radio-label">
-                    <input class="form__radio-input" type="radio" name="impression" value="positive" checked>
+                    <input class="visually-hidden form__radio-input" type="radio" name="impression" value="positive" checked>
                     <span class="form__radio-mark"></span>
                     <span class="form__radio-text">Скорее положительное</span>
                   </label>
                 </li>
                 <li class="form__radio-item">
                   <label class="form__radio-label">
-                    <input class="form__radio-input" type="radio" name="impression" value="negative">
+                    <input class="visually-hidden form__radio-input" type="radio" name="impression" value="negative">
                     <span class="form__radio-mark"></span>
                     <span class="form__radio-text">Скорее отрицательное</span>
                   </label>
                 </li>
                 <li class="form__radio-item">
                   <label class="form__radio-label">
-                    <input class="form__radio-input" type="radio" name="impression" value="undecided">
+                    <input class="visually-hidden form__radio-input" type="radio" name="impression" value="undecided">
                     <span class="form__radio-mark"></span>
                     <span class="form__radio-text">Затрудняюсь ответить</span>
                   </label>
@@ -120,32 +129,32 @@
             </fieldset>
 
             <fieldset class="form__group form__group--place">
-              <h2 class="form__title">Посещенные достопримечательности:</h2>
+              <h2 class="form__title">Посещенные<br class="tform"> достопримечательности:</h2>
               <ul class="form__checkbox-list">
                 <li class="form__checkbox-item">
                   <label class="form__checkbox-label">
-                    <input class="form__checkbox-input" type="checkbox" name="bridge" checked>
+                    <input class="visually-hidden form__checkbox-input" type="checkbox" name="bridge" checked>
                     <span class="form__checkbox-mark"></span>
                     <span class="form__checkbox-text">Мост Дьявола</span>
                   </label>
                 </li>
                 <li class="form__checkbox-item">
                   <label class="form__checkbox-label">
-                    <input class="form__checkbox-input" type="checkbox" name="mountain" checked>
+                    <input class="visually-hidden form__checkbox-input" type="checkbox" name="mountain" checked>
                     <span class="form__checkbox-mark"></span>
                     <span class="form__checkbox-text">Гора-Колокол</span>
                   </label>
                 </li>
                 <li class="form__checkbox-item">
                   <label class="form__checkbox-label">
-                    <input class="form__checkbox-input" type="checkbox" name="park" checked>
+                    <input class="visually-hidden form__checkbox-input" type="checkbox" name="park" checked>
                     <span class="form__checkbox-mark"></span>
                     <span class="form__checkbox-text">Слайд-парк</span>
                   </label>
                 </li>
                 <li class="form__checkbox-item">
                   <label class="form__checkbox-label">
-                    <input class="form__checkbox-input" type="checkbox" name="rocks">
+                    <input class="visually-hidden form__checkbox-input" type="checkbox" name="rocks">
                     <span class="form__checkbox-mark"></span>
                     <span class="form__checkbox-text">Красные скалы</span>
                   </label>
@@ -242,6 +251,7 @@
       </div>
     </div>
   </div>
+  <script src="../js/button-open-close.js"></script>
 </body>
 
 </html>

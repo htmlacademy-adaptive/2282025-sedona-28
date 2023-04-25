@@ -35,23 +35,26 @@
     }
 
     &:focus {
-      background-color: $color-white;
-      outline: 3px solid $color-blue;
+      outline: none;
+      color: $color-light-brown;
+      background: $color-beige;
     }
 
     &:active {
-      background-color: $color-white;
-      color: $color-blue;
+      outline: none;
+      color: rgba($color: $color-light-brown, $alpha: 0.3);
+      background: $color-beige;
     }
 
     &:disabled {
-      background-color: $color-white;
       color: rgba($color: $color-black, $alpha: 0.3);
+      background: $color-white;
     }
   }
 
   .main-navigation__link--current {
-    color: $color-light-beige;
+    background-color: $color-white;
+    color: $color-light-brown;
   }
 
   .main-navigation__toggle {

@@ -3,9 +3,9 @@
   .main-footer__wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
-    max-width: 156px;
-    width: 100%;
     padding: 33px 0;
     margin: 0 auto;
   }
@@ -14,15 +14,8 @@
     @include title;
     color: $color-black;
     font-size: 21px;
-    padding: 0 10px;
-  }
-
-  .main-footer__copyright {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-decoration: none;
-    gap: 12px;
+    max-width: 136px;
+    width: 100%;
   }
 
   .main-footer__copyright-title {
@@ -31,5 +24,34 @@
     flex-wrap: wrap;
     align-content: center;
     color: $color-black;
+  }
+
+  .main-footer__copyright {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: none;
+    max-width: 130px;
+    width: 100%;
+    gap: 12px;
+    color: $color-black;
+
+    &:hover {
+      color: $color-blue;
+    }
+
+    &:focus {
+      outline: none;
+      color: $color-blue-hover;
+    }
+
+    &:active {
+      outline: none;
+      color: $color-blue-down;
+    }
+
+    &:disabled {
+      color: $color-gray-down;
+    }
   }
 }

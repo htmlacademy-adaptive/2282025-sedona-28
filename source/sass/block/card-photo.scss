@@ -5,6 +5,16 @@
     border-top: 1px solid $color-light-gray;
   }
 
+  .card-photo__container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 11px;
+  }
+
   .card-photo__link-image {
     display: block;
     width: 100%;
@@ -14,10 +24,9 @@
   }
 
   .card-photo__title {
-    @include title;
+    @include text;
+    font-weight: 700;
     color: $color-black;
-    font-size: 14px;
-    line-height: 21px;
     text-align: start;
   }
 
@@ -28,10 +37,25 @@
     text-transform: none;
   }
 
+  .card-photo__rating {
+    display: flex;
+    gap: 14px;
+  }
+
+  .card-photo__rating::before {
+    content: "";
+    background-image: url("../img/catalog/like-icon.svg");
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 21px;
+  }
+
   .card-photo__like {
     @include text;
-    color: $color-black;
-    font-weight: 700;
     text-align: start;
+    font-weight: 700;
+    max-width: 240px;
+    padding-top: 5px;
+    color: $color-black;
   }
 }

@@ -5,14 +5,95 @@
   }
 
   .form__group-container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 295px auto 295px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      background-color: $color-gray;
+      left: 50%;
+    }
   }
 
   .form__group {
     padding: 0;
     margin: 0;
     border: none;
+
+    &--name {
+      grid-column: 1/2;
+    }
+
+    &--contact {
+      grid-column: 3/4;
+    }
+
+    &--impression {
+      padding-top: 63px;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 123px;
+        height: 1px;
+        background-color: $color-gray;
+        top: 0;
+        left: 0;
+        transform: translateY(76px);
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 123px;
+        height: 1px;
+        background-color: $color-gray;
+        top: 0;
+        right: 0;
+        transform: translateY(76px);
+      }
+    }
+
+    &--place {
+      position: relative;
+      padding-top: 48px;
+
+      &::before {
+        @include separator-form;
+        left: 0;
+        transform: translateY(74px);
+      }
+
+      &::after {
+        @include separator-form;
+        right: 0;
+        transform: translateY(74px);
+      }
+    }
+
+    &--comment {
+      display: flex;
+      flex-direction: column;
+      padding-top: 42px;
+      position: relative;
+
+      &::before {
+        @include separator-form;
+        left: 0;
+        transform: translateY(55px);
+      }
+
+      &::after {
+        @include separator-form;
+        right: 0;
+        transform: translateY(55px);
+      }
+    }
   }
 
   .form__list {
@@ -23,10 +104,7 @@
 
   .form__title {
     margin: 0;
-  }
-
-  .form__group--impression {
-    padding-top: 63px;
+    font-size: 21px;
   }
 
   .form__radio-list {
@@ -44,10 +122,6 @@
     width: 280px;
   }
 
-  .form__group--place {
-    padding-top: 48px;
-  }
-
   .form__checkbox-list {
     width: 480px;
     display: flex;
@@ -63,12 +137,6 @@
 
   .form__checkbox-item {
     width: 224px;
-  }
-
-  .form__group--comment {
-    display: flex;
-    flex-direction: column;
-    padding-top: 42px;
   }
 
   .form__textarea {
