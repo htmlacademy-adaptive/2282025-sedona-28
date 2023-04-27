@@ -30,8 +30,9 @@
     display: block;
     width: 100%;
     object-fit: cover;
-    height: auto;
     max-width: 280px;
+    min-height: 177px;
+    max-height: 177px;
     margin: 0 auto;
   }
 

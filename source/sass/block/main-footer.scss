@@ -38,20 +38,36 @@
 
     &:hover {
       color: $color-blue;
+
+      .main-footer__copyright-title {
+        color: $color-blue;
+      }
     }
 
     &:focus {
       outline: none;
       color: $color-blue-hover;
+
+      .main-footer__copyright-title {
+        color: $color-blue-hover;
+      }
     }
 
     &:active {
       outline: none;
       color: $color-blue-down;
+
+      .main-footer__copyright-title {
+        color: $color-blue-down;
+      }
     }
 
     &:disabled {
       color: $color-gray-down;
+
+      .main-footer__copyright-title {
+        color: $color-gray-down;
+      }
     }
   }
 }

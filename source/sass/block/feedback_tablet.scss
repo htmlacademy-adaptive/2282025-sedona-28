@@ -23,6 +23,9 @@
     padding: 0;
     margin: 0;
     border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &--name {
       grid-column: 1/2;
@@ -100,11 +103,14 @@
     padding: 0;
     padding-top: 28px;
     margin: 0;
+    width: 100%;
   }
 
   .form__title {
     margin: 0;
     font-size: 21px;
+    max-width: 300px;
+    width: 100%;
   }
 
   .form__radio-list {
@@ -146,7 +152,7 @@
   .form__group-button {
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     padding: 48px 0 64px 0;
   }
 
@@ -156,5 +162,7 @@
 
   .form__footnote {
     margin: 0;
+    max-width: 200px;
+    width: 100%;
   }
 }

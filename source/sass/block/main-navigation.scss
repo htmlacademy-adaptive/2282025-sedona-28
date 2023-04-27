@@ -1,4 +1,4 @@
-// Тень на навигации
+// Тень навигации
 @media (max-width: $mobile-width-only) {
   .main-navigation--opened {
     .main-navigation__wrapper::before {
@@ -34,6 +34,7 @@
     @include list-reset;
     display: flex;
     flex-direction: column;
+    position: relative;
   }
 
   .main-navigation__item {
@@ -111,6 +112,10 @@
   }
 
   .main-navigation--opened {
+    .main-navigation__wrapper {
+      position: absolute;
+    }
+
     .main-navigation__toggle-close {
       color: $color-white;
       cursor: pointer;
@@ -136,7 +141,6 @@
 
     .main-navigation__list {
       display: flex;
-      position: static;
     }
   }
 }

@@ -57,12 +57,7 @@
     display: block;
     object-fit: cover;
     width: 100%;
-
-    &--reverse {
-      display: block;
-      object-fit: cover;
-      width: 100%;
-    }
+    height: 260px;
   }
 
   .advantages__title {
@@ -111,7 +106,6 @@
   .advantages__subbox-svg {
     display: block;
     background-repeat: no-repeat;
-    min-width: 40px;
     max-width: 40px;
     width: 100%;
     height: auto;

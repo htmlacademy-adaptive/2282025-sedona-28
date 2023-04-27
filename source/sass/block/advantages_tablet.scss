@@ -6,14 +6,13 @@
   }
 
   .advantages__item {
-    min-height: 256px;
-
     &--img {
       grid-column: 1/4;
     }
 
     &--gray {
       padding: 41px 33px;
+      min-height: 256px;
     }
   }
 
@@ -21,19 +20,20 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    min-height: 256px;
   }
 
   .advantages__box {
     padding: 0;
-    min-height: 256px;
+    width: 100%;
 
     &--img-one {
       padding: 52px 33px 31px 33px;
+      min-height: 256px;
     }
 
     &--img {
       padding: 52px 33px 31px 33px;
+      min-height: 256px;
     }
 
     &--gray {
@@ -44,6 +44,7 @@
 
   .advantages__image {
     grid-column: 2/4;
+    max-height: 256px;
 
 
     &--reverse {
@@ -127,10 +128,6 @@
 
   .advantages__title {
     font-size: 21px;
-  }
-
-  .advantages__text .remake {
-    display: block;
   }
 
   .adesctop {
