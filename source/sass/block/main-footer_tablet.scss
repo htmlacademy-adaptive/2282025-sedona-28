@@ -1,12 +1,11 @@
 // Tablet
 @media (min-width: $tablet-width) {
-  .main-footer__wrapper {
+  .main-footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    max-width: 648px;
-    padding: 36px 0;
+    padding: 36px 60px;
   }
 
   .main-footer__hashtag {

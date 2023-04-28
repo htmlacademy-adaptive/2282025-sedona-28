@@ -2,12 +2,16 @@
 @media (min-width: $tablet-width) {
   .search__wrapper {
     max-width: 435px;
-    padding: 60px 0 44px 0;
+    padding: 60px 0 55px 0;
     margin: 0 auto;
   }
 
   .search__title {
     font-size: 30px;
+  }
+
+  .search__text {
+    margin-bottom: 44px;
   }
 
   .search__button {

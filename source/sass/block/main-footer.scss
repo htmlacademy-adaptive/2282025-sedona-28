@@ -1,13 +1,12 @@
 // Mobile
 @media (min-width: $mobile-width) {
-  .main-footer__wrapper {
+  .main-footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 30px;
-    padding: 33px 0;
-    margin: 0 auto;
+    padding: 33px 82px;
   }
 
   .main-footer__hashtag {

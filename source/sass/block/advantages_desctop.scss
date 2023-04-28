@@ -19,35 +19,76 @@
   }
 
   .advantages__subitem {
-    min-height: 330px;
+    align-items: center;
+    gap: 24px;
 
     &--house {
-      padding: 69px 50px;
+      padding: 169px 50px 69px 50px;
+
+      &::before {
+        top: 69px;
+        max-width: 80px;
+        height: 72px;
+      }
     }
 
     &--food {
-      padding: 72px 50px 71px 50px;
+      padding: 166px 50px 71px 50px;
+
+      &::before {
+        top: 72px;
+        max-width: 73px;
+        height: 69px;
+      }
     }
 
     &--souvenir {
-      padding: 69px 50px 67px;
+      padding: 170px 50px 67px 50px;
+
+      &::before {
+        top: 69px;
+        max-width: 78px;
+        height: 75px;
+      }
     }
   }
 
-  .advantages__subitem-container {
-    max-width: 300px;
-    gap: 26px;
+  .advantages__text {
+    &--img {
+      max-width: 290px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    &--img-reverse {
+      max-width: 230px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    &--gray {
+      br {
+        display: block;
+      }
+    }
   }
 
-  .adesctop {
-    display: block;
-  }
+  .advantages__subtext {
+    &--house {
+      max-width: 260px;
+    }
 
-  .atablet {
-    display: none;
-  }
+    &--food {
+      max-width: 282px;
+    }
 
-  .amobile {
-    display: none;
+    &--souvenir {
+      max-width: 260px;
+      width: 100%;
+
+      br {
+        display: block;
+      }
+    }
   }
 }

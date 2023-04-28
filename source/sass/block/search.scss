@@ -1,9 +1,9 @@
 // Mobile
 @media (min-width: $mobile-width) {
   .search__wrapper {
-    max-width: 262px;
+    max-width: 284px;
     width: 100%;
-    padding: 38px 0 32px 0;
+    padding: 38px 0 49px 0;
     margin: 0 auto;
   }
 
@@ -16,6 +16,7 @@
 
   .search__text {
     @include text;
+    margin-bottom: 32px;
     color: $color-brown;
   }
 
@@ -48,5 +49,12 @@
       background-color: $color-blue-down;
       color: rgba($color: $color-white, $alpha: 0.3);
     }
+  }
+}
+
+// Mobile streth
+@media (min-width: 420px)and(max-width: $mobile-width-only) {
+  .search__wrapper {
+    max-width: 324px;
   }
 }

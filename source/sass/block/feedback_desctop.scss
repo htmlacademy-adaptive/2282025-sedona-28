@@ -4,27 +4,12 @@
     padding: 0 120px;
   }
 
-  .form__group-container {
-    grid-template-columns: 430px auto 430px;
-  }
-
-  .form__group--impression {
-    padding-top: 71px;
-  }
-
   .form__radio-list {
-    width: 960px;
     gap: 28px;
-    justify-content: space-around;
     margin: 0;
   }
 
-  .form__group--place {
-    padding-top: 56px;
-  }
-
   .form__checkbox-list {
-    width: 960px;
     justify-content: center;
     column-gap: 64px;
     margin: 0;
@@ -34,9 +19,46 @@
     width: 184px;
   }
 
-  .form__group--comment {
-    padding: 0 96px;
-    padding-top: 56px;
+  .form__group-container {
+    margin-bottom: 71px;
+  }
+
+  .form__group {
+    &--impression {
+      margin-bottom: 56px;
+
+      &::before {
+        width: 280px;
+      }
+
+      &::after {
+        width: 280px;
+      }
+    }
+
+    &--place {
+      margin-bottom: 49px;
+
+      &::before {
+        width: 280px;
+      }
+
+      &::after {
+        width: 280px;
+      }
+    }
+
+    &--comment {
+      padding: 0 96px;
+
+      &::before {
+        width: 280px;
+      }
+
+      &::after {
+        width: 280px;
+      }
+    }
   }
 
   .form__group-button {

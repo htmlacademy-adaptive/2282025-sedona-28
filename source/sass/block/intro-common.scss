@@ -51,7 +51,7 @@
 
   .intro__wrapper {
     &--full {
-      max-width: 284px;
+      max-width: 272px;
       width: 100%;
       padding: 32px 0;
       margin: 0 auto;
@@ -87,6 +87,18 @@
       @include text;
       color: $color-brown;
       margin: 0;
+    }
+  }
+}
+
+// Mobile streth
+@media (min-width: 420px)and(max-width: $mobile-width-only) {
+  .intro__wrapper {
+    &--full {
+      max-width: 335px;
+      width: 100%;
+      padding: 32px 0;
+      margin: 0 auto;
     }
   }
 }
