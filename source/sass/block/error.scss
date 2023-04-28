@@ -7,7 +7,8 @@
   .error__container {
     display: flex;
     flex-direction: column;
-    width: 237px;
+    max-width: 237px;
+    width: 100%;
     padding: 0 0 28px 0;
     margin: 0 auto;
   }
@@ -31,5 +32,19 @@
     width: 180px;
     padding: 10px;
     margin: 0 auto;
+
+    &:hover {
+      background-color: $color-blue-hover;
+    }
+
+    &:focus {
+      outline: none;
+      background-color: linear-gradient(180deg, $color-blue 0%, $color-blue-down 100%);
+    }
+
+    &:active {
+      outline: none;
+      background-color: linear-gradient(180deg, $color-beige -165%, $color-blue 45%);
+    }
   }
 }

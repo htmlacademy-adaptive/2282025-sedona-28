@@ -5,7 +5,8 @@
   }
 
   .video__slogan {
-    width: 266px;
+    max-width: 266px;
+    width: 100%;
     padding: 17px 0 38px 0;
     margin: 0 auto;
   }
@@ -13,12 +14,12 @@
   .video__title {
     @include title;
     color: $color-black;
+    margin-bottom: 38px;
   }
 
   .video__text {
     @include text;
     color: $color-brown;
-    margin-top: 38px;
   }
 
   .video__inner {
@@ -29,12 +30,30 @@
     display: block;
     width: 100%;
     object-fit: cover;
+    max-width: 280px;
+    min-height: 177px;
     max-height: 177px;
+    margin: 0 auto;
   }
 
   .video__play {
     position: absolute;
-    right: 50%;
+    width: 47px;
+    height: 54px;
     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    background-color: transparent;
+    border: 2px solid transparent;
+
+    &::before {
+      content: "";
+      display: flex;
+      width: 47px;
+      height: 54px;
+      background-image: url("../img/catalog/play-video.svg");
+      background-repeat: no-repeat;
+    }
   }
 }

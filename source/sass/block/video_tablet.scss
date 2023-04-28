@@ -2,18 +2,17 @@
 @media (min-width: $tablet-width) {
   .video__wrapper {
     border: none;
+    margin-bottom: 40px;
   }
 
   .video__slogan {
-    width: 445px;
+    max-width: 446px;
     padding: 62px 0 70px 0;
   }
 
-  .video__inner {
-    padding-bottom: 40px;
-  }
-
   .video__image {
+    max-width: 648px;
+    min-height: 500px;
     max-height: 500px;
   }
 

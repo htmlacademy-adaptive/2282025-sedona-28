@@ -1,5 +1,25 @@
+// Ступенька у блока преимуществ
+@media (min-width: $mobile-width) and (max-width: 420px) {
+  .advantages__wrapper {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -16px;
+      right: 0;
+      width: 100%;
+      height: 37px;
+      background-image: url("../img/index/advantages-triangle.svg");
+      background-position: center;
+    }
+  }
+}
+
 // Mobile
 @media (min-width: $mobile-width) {
+  .advantages__wrapper {
+    position: relative;
+  }
+
   .advantages__list {
     @include list-reset;
     display: flex;
@@ -7,21 +27,36 @@
   }
 
   .advantages__item {
+    &:nth-child(n+4) {
+      &::before {
+        content: "";
+        position: absolute;
+        background-color: $color-gray;
+        max-width: 284px;
+        width: 100%;
+        height: 1px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
     &--gray {
-      padding: 0 18px;
+      padding: 24px 31px;
       background-color: $color-light-beige;
+      position: relative;
     }
   }
 
   .advantages__box {
+    background-color: $color-blue;
+
     &--img {
-      background-color: $color-blue;
-      padding: 33px 18px 40px 18px;
+      padding: 54px 18px 40px 18px;
     }
 
-    &--gray {
-      padding: 24px 0;
-      border-top: 1px solid $color-gray;
+    &--img-reverse {
+      padding: 37px 18px;
     }
   }
 
@@ -29,19 +64,18 @@
     display: block;
     object-fit: cover;
     width: 100%;
-
-    &--reverse {
-      display: block;
-      object-fit: cover;
-      width: 100%;
-    }
   }
 
   .advantages__title {
     @include title;
     color: $color-black;
+    margin-bottom: 11px;
 
     &--img {
+      color: $color-white;
+    }
+
+    &--img-reverse {
       color: $color-white;
     }
   }
@@ -49,9 +83,13 @@
   .advantages__number {
     @include text;
     color: $color-brown;
-    margin-top: 17px;
+    margin-bottom: 17px;
 
     &--img {
+      color: $color-white;
+    }
+
+    &--img-reverse {
       color: $color-white;
     }
   }
@@ -59,12 +97,23 @@
   .advantages__text {
     @include text;
     color: $color-brown;
-    margin-top: 17px;
+    width: 100%;
 
     &--img {
       color: $color-white;
     }
+
+    &--img-reverse {
+      color: $color-white;
+    }
+
+    &--gray {
+      br {
+        display: none;
+      }
+    }
   }
+
 
   .advantages__sublist {
     @include list-reset;
@@ -74,17 +123,69 @@
     padding: 23px 18px 46px 18px;
   }
 
+  .advantages__subitem {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    position: relative;
+
+    &--house {
+      &::before {
+        content: "";
+        position: absolute;
+        background-image: url("../img/index/house.svg");
+        background-repeat: no-repeat;
+        max-width: 40px;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+      }
+    }
+
+    &--food {
+      &::before {
+        content: "";
+        position: absolute;
+        background-image: url("../img/index/food.svg");
+        display: block;
+        background-repeat: no-repeat;
+        max-width: 40px;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+      }
+    }
+
+    &--souvenir {
+      &::before {
+        content: "";
+        position: absolute;
+        background-image: url("../img/index/souvenir.svg");
+        display: block;
+        background-repeat: no-repeat;
+        max-width: 40px;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+      }
+    }
+  }
+
   .advantages__subtitle {
     @include title;
-    color: $color-black;
     text-align: start;
-    margin-top: 8px;
+    padding-left: 47px;
+    color: $color-black;
   }
 
   .advantages__subtext {
     @include text;
+    padding-left: 47px;
     color: $color-brown;
     text-align: start;
-    margin-top: 16px;
+
+    br {
+      display: none;
+    }
   }
 }

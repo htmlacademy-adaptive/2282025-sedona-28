@@ -11,13 +11,29 @@
 
   .success__button {
     @include title;
-    width: 280px;
+    max-width: 280px;
+    width: 100%;
     padding: 10px;
     margin: 20px auto;
+
+    &:hover {
+      background-color: $color-blue-hover;
+    }
+
+    &:focus {
+      outline: none;
+      background: linear-gradient(180deg, $color-blue 0%, $color-blue-down 100%);
+    }
+
+    &:active {
+      outline: none;
+      background: linear-gradient(180deg, $color-beige -165%, $color-blue 45%);
+    }
   }
 
   .success__container {
-    width: 244px;
+    max-width: 244px;
+    width: 100%;
     padding: 44px 0 34px 0;
     margin: 0 auto;
   }

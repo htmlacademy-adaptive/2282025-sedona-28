@@ -1,28 +1,20 @@
 // Mobile
 @media (min-width: $mobile-width) {
   .map__wrapper {
-    min-height: 350px;
-    padding: 49px 0 8px 0;
+    margin-bottom: 8px;
   }
 
-  .map__image {
-    display: flex;
+  .map__google {
+    display: block;
     width: 100%;
-    object-fit: contain;
+    height: 350px;
+    margin: 0;
   }
 }
 
-// Mobile
+// Tablet
 @media (min-width: $tablet-width) {
   .map__wrapper {
-    padding: 0;
-    padding-top: 55px;
-  }
-}
-// Desctop
-@media (min-width: $desctop-width) {
-  .map__wrapper {
-    padding: 0;
-    padding-top: 66px;
+    margin: 0;
   }
 }

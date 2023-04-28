@@ -9,26 +9,27 @@
   }
 
   .intro__logo-img {
-    width: 457px;
+    max-width: 457px;
+    width: 100%;
 
     &--full {
-      width: 461px;
+      max-width: 461px;
     }
   }
 
   .intro__wrapper {
     &--full {
-      min-width: 520px;
+      max-width: 520px;
       padding: 48px 0 55px 0;
     }
 
     &--catalog {
-      width: 458px;
+      max-width: 458px;
       padding: 66px 0 67px 0;
     }
 
     &--form {
-      width: 436px;
+      max-width: 436px;
       padding: 64px 0 108px 0;
     }
   }
@@ -38,6 +39,10 @@
 
     &--full {
       font-size: 21px;
+    }
+
+    br {
+      display: none;
     }
   }
 }

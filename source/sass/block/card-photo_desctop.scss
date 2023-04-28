@@ -11,6 +11,10 @@
     background-color: rgba($color-black, $alpha: 0.3);
   }
 
+  .card-photo__rating::before {
+    background-image: url("../img/catalog/like-icon-white.svg");
+  }
+
   .card-photo__title,
   .card-photo__author,
   .card-photo__like {

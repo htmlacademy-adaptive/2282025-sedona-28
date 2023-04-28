@@ -1,8 +1,9 @@
 // Tablet
 @media (min-width: $tablet-width) {
-  .main-navigation {
+  .main-navigation__wrapper {
     @include text;
     font-weight: 700;
+    z-index: 1;
   }
 
   .main-navigation__list {
@@ -19,13 +20,41 @@
 
   .main-navigation__item {
     background-color: $color-white;
-    box-shadow: none;
+    border: none;
   }
 
   .main-navigation__link {
     display: block;
     color: $color-black;
     padding: 18px 20px 17px 20px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-blue;
+    }
+
+    &:focus {
+      outline: none;
+      color: $color-light-brown;
+      background: $color-beige;
+    }
+
+    &:active {
+      outline: none;
+      color: rgba($color: $color-light-brown, $alpha: 0.3);
+      background: $color-beige;
+    }
+
+    &:disabled {
+      color: rgba($color: $color-black, $alpha: 0.3);
+      background: $color-white;
+    }
+  }
+
+  .main-navigation__link--current {
+    background-color: $color-white;
+    color: $color-light-brown;
   }
 
   .main-navigation__toggle {
