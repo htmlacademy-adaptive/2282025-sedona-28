@@ -6,6 +6,10 @@
   <title>Место отдыха, город Седона</title>
   <link rel="stylesheet" href="./css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -66,8 +70,16 @@
           <ul class="gallery">
             <li class="gallery__card card-photo card-photo--stretch">
               <a class="card-photo__link" href="#">
-                <img class="card-photo__link-image card-photo__link-image--stretch"
-                  src="img/catalog/photo-1-desktop.jpg" width="1200" height="400" alt="Вечерняя дорога.">
+                <div class="card-photo__box-img">
+                  <picture>
+                    <source media="(min-width: 768px)"
+                      srcset="img/catalog/photo-1-tablet.jpg 1x, img/catalog/photo-1-tablet@2x.jpg 2x" width="1200"
+                      height="400">
+                    <img class="card-photo__link-image card-photo__link-image--stretch"
+                      src="img/catalog/photo-1-mobile.jpg" srcset="img/catalog/photo-1-mobile@2x.jpg 2x" width="840"
+                      height="280" alt="Вечерняя дорога.">
+                  </picture>
+                </div>
               </a>
               <div class="card-photo__container">
                 <div class="card-photo__description">
@@ -81,8 +93,15 @@
             </li>
             <li class="gallery__card card-photo">
               <a class="card-photo__link" href="#">
-                <img class="card-photo__link-image" src="img/catalog/photo-2-desktop.jpg" width="400" height="267"
-                  alt="Необычные цветы.">
+                <div class="card-photo__box-img">
+                  <picture>
+                    <source media="(min-width: 768px)"
+                      srcset="img/catalog/photo-2-tablet.jpg 1x, img/catalog/photo-2-tablet@2x.jpg 2x" width="400"
+                      height="267">
+                    <img class="card-photo__link-image card-photo__link-image" src="img/catalog/photo-2-mobile.jpg"
+                      srcset="img/catalog/photo-2-mobile@2x.jpg 2x" width="420" height="280" alt="Необычные цветы.">
+                  </picture>
+                </div>
               </a>
               <div class="card-photo__container">
                 <div class="card-photo__description">
@@ -96,8 +115,16 @@
             </li>
             <li class="gallery__card card-photo">
               <a class="card-photo__link" href="#">
-                <img class="card-photo__link-image" src="img/catalog/photo-3-desktop.jpg" width="400" height="267"
-                  alt="Извилистая дорога в горах.">
+                <div class="card-photo__box-img">
+                  <picture>
+                    <source media="(min-width: 768px)"
+                      srcset="img/catalog/photo-3-tablet.jpg 1x, img/catalog/photo-3-tablet@2x.jpg 2x" width="400"
+                      height="267">
+                    <img class="card-photo__link-image card-photo__link-image" src="img/catalog/photo-3-mobile.jpg"
+                      srcset="img/catalog/photo-3-mobile@2x.jpg 2x" width="420" height="280"
+                      alt="Извилистая дорога в горах.">
+                  </picture>
+                </div>
               </a>
               <div class="card-photo__container">
                 <div class="card-photo__description">
@@ -111,8 +138,15 @@
             </li>
             <li class="gallery__card card-photo">
               <a class="card-photo__link" href="#">
-                <img class="card-photo__link-image" src="img/catalog/photo-4-desktop.jpg" width="400" height="267"
-                  alt="Местный пейзаж.">
+                <div class="card-photo__box-img">
+                  <picture>
+                    <source media="(min-width: 768px)"
+                      srcset="img/catalog/photo-4-tablet.jpg 1x, img/catalog/photo-4-tablet@2x.jpg 2x" width="400"
+                      height="267">
+                    <img class="card-photo__link-image card-photo__link-image" src="img/catalog/photo-4-mobile.jpg"
+                      srcset="img/catalog/photo-4-mobile@2x.jpg 2x" width="420" height="280" alt="Местный пейзаж.">
+                  </picture>
+                </div>
               </a>
               <div class="card-photo__container">
                 <div class="card-photo__description">
@@ -136,7 +170,20 @@
               очередной раз!</p>
           </div>
           <div class="video__inner">
-            <img class="video__image" src="img/catalog/video-desktop.jpg" width="800" height="500" alt="Презентация.">
+            <a class="video__link" href="#">
+              <div class="video__box-img">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/catalog/video-desktop.jpg 1x, img/catalog/video-desktop@2x.jpg 2x" width="800"
+                    height="500">
+                  <source media="(min-width: 768px)"
+                    srcset="img/catalog/video-tablet.jpg 1x, img/catalog/video-tablet@2x.jpg 2x" width="648"
+                    height="500">
+                  <img class="video__link-image" src="img/catalog/video-mobile.jpg"
+                    srcset="img/catalog/video-mobile@2x.jpg 2x" width="280" height="177" alt="Презентация.">
+                </picture>
+              </div>
+            </a>
             <button class="video__play" type="button"></button>
           </div>
         </div>

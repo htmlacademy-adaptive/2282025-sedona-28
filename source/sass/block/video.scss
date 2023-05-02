@@ -26,13 +26,8 @@
     position: relative;
   }
 
-  .video__image {
+  .video__link-image {
     display: block;
-    width: 100%;
-    object-fit: cover;
-    max-width: 280px;
-    min-height: 177px;
-    max-height: 177px;
     margin: 0 auto;
   }
 
@@ -45,7 +40,7 @@
     transform: translate(-50%, -50%);
     padding: 0;
     background-color: transparent;
-    border: 2px solid transparent;
+    border: none;
 
     &::before {
       content: "";

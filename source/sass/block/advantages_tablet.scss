@@ -33,10 +33,12 @@
     }
   }
 
-  .advantages__image {
-    grid-column: 2/-1;
+  .advantages__box-img {
+    &--img {
+      grid-column: 2/-1;
+    }
 
-    &--reverse {
+    &--img-reverse {
       grid-column: 1/3;
       grid-row: 1/2;
     }

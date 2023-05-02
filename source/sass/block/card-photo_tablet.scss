@@ -19,14 +19,11 @@
 
   .card-photo__link-image {
     margin: 0;
-    min-height: 267px;
-    max-height: 267px;
 
     &--stretch {
       display: block;
       width: 100%;
       object-fit: cover;
-      max-height: 400px;
     }
   }
 
