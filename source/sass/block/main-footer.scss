@@ -1,6 +1,5 @@
-// Mobile
-@media (min-width: $mobile-width) {
-  .main-footer {
+.main-footer {
+  @media (min-width: $mobile-width) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,7 +8,21 @@
     padding: 33px 82px;
   }
 
-  .main-footer__hashtag {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 60px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding: 36px 120px;
+  }
+}
+
+.main-footer__hashtag {
+  @media (min-width: $mobile-width) {
     @include title;
     color: $color-black;
     font-size: 21px;
@@ -17,15 +30,23 @@
     width: 100%;
   }
 
-  .main-footer__copyright-title {
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.main-footer__copyright-title {
+  @media (min-width: $mobile-width) {
     @include text;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     color: $color-black;
   }
+}
 
-  .main-footer__copyright {
+.main-footer__copyright {
+  @media (min-width: $mobile-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

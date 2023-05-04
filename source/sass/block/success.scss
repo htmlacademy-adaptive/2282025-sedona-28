@@ -1,15 +1,26 @@
-// Mobile
-@media (min-width: $mobile-width) {
-  .success__title {
+.success__inner {
+  @media (min-width: $tablet-width) {
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.success__title {
+  @media (min-width: $mobile-width) {
     @include title;
   }
+}
 
-  .success__text {
+.success__text {
+  @media (min-width: $mobile-width) {
     @include text;
     margin-top: 36px;
   }
+}
 
-  .success__button {
+.success__button {
+  @media (min-width: $mobile-width) {
     @include title;
     max-width: 280px;
     width: 100%;
@@ -31,14 +42,32 @@
     }
   }
 
-  .success__container {
+  @media (min-width: $tablet-width) {
+    max-width: 458px;
+    width: 100%;
+    padding: 10px;
+    margin: 44px auto;
+  }
+}
+
+.success__container {
+  @media (min-width: $mobile-width) {
     max-width: 244px;
     width: 100%;
     padding: 44px 0 34px 0;
     margin: 0 auto;
   }
 
-  .success__background-grey {
+  @media (min-width: $tablet-width) {
+    max-width: 444px;
+    width: 100%;
+    padding: 53px 0 30px 0;
+    margin: 0 auto;
+  }
+}
+
+.success__background-grey {
+  @media (min-width: $mobile-width) {
     display: flex;
     background-color: $color-beige;
   }

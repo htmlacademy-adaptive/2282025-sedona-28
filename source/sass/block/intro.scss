@@ -1,0 +1,214 @@
+.intro__logo {
+  @media (min-width: $mobile-width) {
+    background-color: $color-gray;
+    background-image: url("../img/catalog/intro-background-mobile.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 52px 0 67px 0;
+    position: relative;
+    z-index: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/intro-background-mobile@2x.jpg");
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      max-width: 1200px;
+      width: 100%;
+      height: 56px;
+      background-image: url("../img/index/intro-triangle.svg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    &--full {
+      background-color: $color-gray;
+      background-image: url("../img/index/intro-background-mobile.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      z-index: 0;
+      padding: 90px 0 85px 0;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index/intro-background-mobile@2x.jpg");
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/catalog/intro-background-tablet.jpg");
+    background-position: bottom;
+    padding: 95px 0 117px 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/intro-background-tablet@2x.jpg");
+    }
+
+    &--full {
+      background-image: url("../img/index/intro-background-tablet.jpg");
+      padding: 77px 0 91px 0;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index/intro-background-tablet@2x.jpg");
+      }
+    }
+  }
+
+  @media (min-width: $desctop-width) {
+    padding: 101px 0 120px 0;
+
+    &--full {
+      padding: 78px 0 90px 0;
+    }
+  }
+}
+
+.intro__logo-img {
+  @media (min-width: $mobile-width) {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+
+    &--full {
+      display: block;
+      max-width: 282px;
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 457px;
+    width: 100%;
+
+    &--full {
+      max-width: 461px;
+    }
+  }
+
+  @media (min-width: $desctop-width) {
+    max-width: 460px;
+    width: 100%;
+
+    &--full {
+      max-width: 460px;
+    }
+  }
+}
+
+.intro__wrapper {
+  @media (min-width: $mobile-width) {
+    &--full {
+      max-width: 272px;
+      width: 100%;
+      padding: 32px 0;
+      margin: 0 auto;
+    }
+
+    &--catalog {
+      max-width: 280px;
+      width: 100%;
+      padding: 37px 0 25px 0;
+      margin: 0 auto;
+    }
+
+    &--form {
+      max-width: 280px;
+      width: 100%;
+      padding: 36px 0 28px 0;
+      margin: 0 auto;
+    }
+  }
+
+  @media (min-width: 420px)and(max-width: $mobile-width-only) {
+    &--full {
+      max-width: 335px;
+      width: 100%;
+      padding: 32px 0;
+      margin: 0 auto;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--full {
+      max-width: 520px;
+      padding: 48px 0 55px 0;
+    }
+
+    &--catalog {
+      max-width: 458px;
+      padding: 66px 0 67px 0;
+    }
+
+    &--form {
+      max-width: 436px;
+      padding: 64px 0 108px 0;
+    }
+  }
+
+  @media (min-width: $desctop-width) {
+    &--full {
+      max-width: 485px;
+      padding: 59px 0 44px 0;
+    }
+
+    &--catalog {
+      max-width: 485px;
+      padding: 100px 0 65px 0;
+    }
+
+    &--form {
+      max-width: 436px;
+      padding: 115px 0 68px 0;
+    }
+  }
+}
+
+.intro__title {
+  @media (min-width: $mobile-width) {
+    @include title;
+    color: $color-black;
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+
+    &--full {
+      font-size: 21px;
+    }
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desctop-width) {
+    font-size: 30px;
+
+    &--full {
+      font-size: 21px;
+    }
+  }
+}
+
+.intro__text {
+  @media (min-width: $mobile-width) {
+    @include text;
+    color: $color-brown;
+
+
+    &--form {
+      @include text;
+      color: $color-brown;
+      margin: 0;
+    }
+  }
+}

@@ -1,11 +1,13 @@
-// Mobile
-@media (min-width: $mobile-width) {
-  .gallery__card {
-    padding: 24px 20px 25px 20px;
-    border-top: 1px solid $color-light-gray;
+.card-photo {
+  @media (min-width: $tablet-width) {
+    &--stretch {
+      grid-column: 1/-1;
+    }
   }
+}
 
-  .card-photo__container {
+.card-photo__container {
+  @media (min-width: $mobile-width) {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -15,34 +17,80 @@
     gap: 11px;
   }
 
-  .card-photo__link-image {
-    display: block;
-    width: 100%;
-    object-fit: cover;
-    margin-bottom: 15px;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 1fr;
+    background-color: $color-beige;
+    padding: 22px 20px 15px 20px;
+    margin-top: auto;
   }
 
-  .card-photo__title {
+  @media (min-width: $desctop-width) {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba($color-black, $alpha: 0.3);
+  }
+}
+
+.card-photo__link {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+  }
+}
+
+.card-photo__link-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.card-photo__title {
+  @media (min-width: $mobile-width) {
     @include text;
     font-weight: 700;
     color: $color-black;
     text-align: start;
   }
 
-  .card-photo__author {
+  @media (min-width: $desctop-width) {
+    color: $color-white;
+  }
+}
+
+.card-photo__author {
+  @media (min-width: $mobile-width) {
     @include text;
     color: $color-brown;
     text-align: start;
     text-transform: none;
   }
 
-  .card-photo__rating {
+  @media (min-width: $desctop-width) {
+    color: $color-white;
+  }
+}
+
+.card-photo__rating {
+  @media (min-width: $mobile-width) {
+    @include text;
     display: flex;
     gap: 14px;
     align-items: baseline;
+    text-align: start;
+    font-weight: 700;
+    max-width: 240px;
+    color: $color-black;
   }
 
-  .card-photo__rating::before {
+  &::before {
     content: "";
     background-image: url("../img/catalog/like-icon.svg");
     background-repeat: no-repeat;
@@ -52,11 +100,35 @@
     height: 21px;
   }
 
-  .card-photo__like {
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+    margin-bottom: 8px;
+  }
+
+  @media (min-width: $desctop-width) {
+    &::before {
+      background-image: url("../img/catalog/like-icon-white.svg");
+    }
+  }
+}
+
+.card-photo__like {
+  @media (min-width: $mobile-width) {
     @include text;
     text-align: start;
     font-weight: 700;
     max-width: 240px;
     color: $color-black;
+  }
+
+  // @media (min-width: $tablet-width) {
+  //   @include text;
+  //   font-weight: 700;
+  //   max-width: 240px;
+  //   text-align: start;
+  // }
+
+  @media (min-width: $desctop-width) {
+    color: $color-white;
   }
 }

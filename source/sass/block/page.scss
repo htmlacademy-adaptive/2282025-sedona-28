@@ -1,10 +1,11 @@
-// Mobile
-@media (min-width: $mobile-width) {
-  .page {
+.page {
+  @media (min-width: $mobile-width) {
     height: 100%;
   }
+}
 
-  .page__body {
+.page__body {
+  @media (min-width: $mobile-width) {
     width: 100%;
     height: 100%;
     padding: 0;
@@ -15,12 +16,38 @@
     font-weight: 400;
   }
 
-  .page__container {
+  @media (min-width: $tablet-width) {
+    background-color: $color-beige;
+  }
+
+  @media (min-width: $desctop-width) {
+    background-color: $color-beige;
+    max-width: $desctop-width;
+  }
+}
+
+.page__container {
+  @media (min-width: $mobile-width) {
     display: flex;
     flex-direction: column;
     min-height: 100%;
     width: 100%;
     padding: 0;
     background-color: $color-white;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding: 0;
+    background-color: $color-white;
+    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+  }
+
+  @media (min-width: $desctop-width) {
+    max-width: $desctop-width;
+    width: 100%;
+    padding: 0;
+    background-color: $color-white;
+    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
   }
 }
