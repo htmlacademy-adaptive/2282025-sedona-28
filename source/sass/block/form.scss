@@ -1,0 +1,568 @@
+.form {
+  @media (min-width: $mobile-width) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding: 0 120px;
+  }
+}
+
+
+.form__group-container {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    gap: 100px;
+    position: relative;
+    margin-bottom: 63px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      background-color: $color-gray;
+      left: 50%;
+    }
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 71px;
+  }
+}
+
+.form__group {
+  @media (min-width: $mobile-width) {
+    padding: 0 20px;
+    margin: 0;
+    border: none;
+    border-top: 1px solid $color-gray;
+
+    &--name {
+      padding-bottom: 15px;
+    }
+
+    &--contact {
+      padding-bottom: 10px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--impression {
+      position: relative;
+      margin-bottom: 48px;
+
+      &::before {
+        @include separator-form;
+        top: 13px;
+        left: 0;
+      }
+
+      &::after {
+        @include separator-form;
+        top: 13px;
+        right: 0;
+      }
+    }
+
+    &--place {
+      position: relative;
+      margin-bottom: 42px;
+
+      &::before {
+        @include separator-form;
+        top: 26px;
+        left: 0;
+      }
+
+      &::after {
+        @include separator-form;
+        right: 0;
+        top: 26px;
+      }
+    }
+
+    &--comment {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      &::before {
+        @include separator-form;
+        left: 0;
+        top: 13px;
+      }
+
+      &::after {
+        @include separator-form;
+        right: 0;
+        top: 13px;
+      }
+    }
+  }
+
+  @media (min-width: $desctop-width) {
+    &--impression {
+      margin-bottom: 56px;
+
+      &::before {
+        width: 280px;
+      }
+
+      &::after {
+        width: 280px;
+      }
+    }
+
+    &--place {
+      margin-bottom: 49px;
+
+      &::before {
+        width: 280px;
+      }
+
+      &::after {
+        width: 280px;
+      }
+    }
+
+    &--comment {
+      padding: 0 96px;
+
+      &::before {
+        width: 280px;
+      }
+
+      &::after {
+        width: 280px;
+      }
+    }
+  }
+}
+
+.form__list {
+  @media (min-width: $mobile-width) {
+    @include list-reset;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 16px;
+    margin: 0;
+    padding: 20px 0 24px 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-top: 28px;
+    margin: 0;
+    width: 100%;
+  }
+
+  @media (min-width: $desctop-width) {
+    gap: 28px;
+    margin: 0;
+  }
+}
+
+
+.form__item {
+  @media (min-width: $mobile-width) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &--svg-tel {
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 58px;
+        height: 58px;
+        background-color: $color-light-gray;
+        background-image: url("../img/form/icon-phone.svg");
+        border: 2px solid transparent;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        bottom: 0;
+        right: 0;
+      }
+    }
+
+    &--svg-email {
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 58px;
+        height: 58px;
+        background-color: $color-light-gray;
+        background-image: url("../img/form/icon-email.svg");
+        border: 2px solid transparent;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+}
+
+.form__title {
+  @media (min-width: $mobile-width) {
+    @include title;
+    margin-top: 24px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 21px;
+    max-width: 300px;
+    width: 100%;
+  }
+}
+
+.form__label-text {
+  @media (min-width: $mobile-width) {
+    @include text;
+    color: $color-brown;
+    display: flex;
+    margin-left: 16px;
+  }
+}
+
+.form__input-text {
+  @media (min-width: $mobile-width) {
+    @include title;
+    background-color: $color-beige;
+    text-align: start;
+    text-transform: none;
+    width: 100%;
+    padding: 12px;
+    border: 4px solid transparent;
+
+    &:hover {
+      background-color: $color-light-gray;
+    }
+
+    &:focus {
+      outline: none;
+      background: $color-light-gray;
+      border: 4px solid $color-gray-down;
+    }
+
+    &:active {
+      outline: none;
+      background: $color-white;
+      border: 4px solid $color-light-gray;
+    }
+  }
+}
+
+.form__radio-list {
+  @media (min-width: $mobile-width) {
+    @include list-reset;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 16px;
+    margin: 0;
+    padding: 20px 0 24px 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 28px 36px 0 36px;
+  }
+
+  @media (min-width: $desctop-width) {
+    gap: 28px;
+    padding: 28px 0 0 0;
+  }
+}
+
+.form__radio-item {
+  @media (min-width: $tablet-width) {
+    width: 280px;
+  }
+}
+
+.form__radio-label {
+  @media (min-width: $mobile-width) {
+    position: relative;
+    display: block;
+    padding: 10px 0 10px 62px;
+  }
+}
+
+.form__radio-input {
+  &:hover + .form__radio-mark {
+    background-color: $color-light-gray;
+  }
+
+  &:focus + .form__radio-mark {
+    outline: 1px solid $color-gray-down;
+  }
+
+  &:active + .form__radio-mark {
+    outline: none;
+    background-color: $color-gray-down;
+  }
+
+  &:disabled + .form__radio-mark {
+    outline: none;
+    background-color: $color-gray;
+    opacity: 0.3;
+  }
+}
+
+.form__radio-input:checked + .form__radio-mark {
+  @media (min-width: $mobile-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 13px;
+      left: 13px;
+      width: 16px;
+      height: 16px;
+      background-color: $color-brown;
+      border-radius: 50%;
+    }
+  }
+}
+
+
+.form__radio-mark {
+  @media (min-width: $mobile-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 46px;
+    height: 46px;
+    border: 2px solid transparent;
+    background-color: $color-beige;
+    border-radius: 50%;
+  }
+}
+
+.form__radio-text {
+  @media (min-width: $mobile-width) {
+    @include title;
+    text-transform: none;
+  }
+}
+
+.form__checkbox-list {
+  @media (min-width: $mobile-width) {
+    @include list-reset;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 16px;
+    margin: 0;
+    padding: 20px 0 24px 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 32px;
+    row-gap: 16px;
+    padding: 28px 84px 0 84px;
+  }
+
+  @media (min-width: $desctop-width) {
+    column-gap: 64px;
+    padding: 28px 0 0 0;
+  }
+}
+
+.form__checkbox-item {
+  @media (min-width: $tablet-width) {
+    width: 224px;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 184px;
+  }
+}
+
+.form__checkbox-label {
+  @media (min-width: $mobile-width) {
+    position: relative;
+    display: block;
+    padding: 10px 0 10px 62px;
+  }
+}
+
+.form__checkbox-input {
+  &:hover + .form__checkbox-mark {
+    background-color: $color-light-gray;
+  }
+
+  &:focus + .form__checkbox-mark {
+    outline: 1px solid $color-gray-down;
+  }
+
+  &:active + .form__checkbox-mark {
+    outline: none;
+    background-color: $color-gray-down;
+  }
+
+  &:disabled + .form__checkbox-mark {
+    outline: none;
+    background-color: $color-gray;
+    opacity: 0.3;
+  }
+}
+
+.form__checkbox-input:checked + .form__checkbox-mark {
+  @media (min-width: $mobile-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/form/check.svg");
+      width: 22px;
+      height: 16px;
+      top: 13px;
+      left: 10px;
+    }
+  }
+}
+
+.form__checkbox-mark {
+  @media (min-width: $mobile-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 46px;
+    height: 46px;
+    border: 2px solid transparent;
+    background-color: $color-beige;
+    border-radius: 4%;
+  }
+}
+
+.form__checkbox-text {
+  @media (min-width: $mobile-width) {
+    @include title;
+    text-transform: none;
+  }
+}
+
+.form__textarea {
+  @media (min-width: $mobile-width) {
+    @include title;
+    display: flex;
+    flex-direction: column;
+    text-transform: none;
+    text-align: start;
+    padding: 16px;
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+    background-color: $color-beige;
+    border: 4px solid transparent;
+    font-family: inherit;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $desctop-width) {
+    max-width: 768px;
+    width: 100%;
+    height: 160px;
+  }
+}
+
+.form__group-button {
+  @media (min-width: $mobile-width) {
+    display: flex;
+    flex-direction: column;
+    padding: 56px 20px 22px 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 48px 0 64px 0;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding: 48px 96px 64px 96px;
+  }
+}
+
+.form__sent {
+  @media (min-width: $mobile-width) {
+    @include title;
+    font-size: 21px;
+    padding: 12px;
+
+    &:hover {
+      background-color: $color-blue-hover;
+    }
+
+    &:focus {
+      outline: none;
+      background: linear-gradient(180deg, $color-blue 0%, $color-blue-down 100%);
+    }
+
+    &:active {
+      outline: none;
+      background: linear-gradient(180deg, $color-beige -165%, $color-blue 45%);
+    }
+
+    &:disabled {
+      background-color: $color-blue-down;
+      color: rgba($color: $color-white, $alpha: 0.3);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+  }
+}
+
+.form__footnote {
+  @media (min-width: $mobile-width) {
+    @include text;
+    color: $color-brown;
+    font-size: 12px;
+    opacity: 0.6;
+    text-align: right;
+    margin-top: 3px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    max-width: 200px;
+    width: 100%;
+  }
+}

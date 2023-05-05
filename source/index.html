@@ -6,6 +6,10 @@
   <title>Место отдыха, город Седона</title>
   <link rel="stylesheet" href="./css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -72,8 +76,16 @@
                 <p class="advantages__text advantages__text--img">Седона не аттракцион для туристов, там течёт
                   своя жизнь</p>
               </div>
-              <img class="advantages__image" src="img/index/photo-city@1x.jpg" width="512" height="256"
-                alt="Местные улочки.">
+              <div class="advantages__box-img advantages__box-img--img">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/index/photo-city-d-@1x.jpg 1x, img/index/photo-city-d-@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/index/photo-city-t-@1x.jpg 1x, img/index/photo-city-t-@2x.jpg 2x">
+                  <img class="advantages__image" src="img/index/photo-city-m-@1x.jpg"
+                    srcset="img/index/photo-city-m-@2x.jpg 2x" width="320" height="260" alt="Местные улочки.">
+                </picture>
+              </div>
               <ul class="advantages__sublist">
                 <li class="advantages__subitem advantages__subitem--house">
                   <h4 class="advantages__subtitle">Жилье</h4>
@@ -100,8 +112,16 @@
                   вы осмелитесь,
                   конечно</p>
               </div>
-              <img class="advantages__image advantages__image--reverse" src="img/index/photo-bridge@1x.jpg" width="512"
-                height="256" alt="Мост дьявола.">
+              <div class="advantages__box-img advantages__box-img--img-reverse">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/index/photo-bridge-d-@1x.jpg 1x, img/index/photo-bridge-d-@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/index/photo-bridge-t-@1x.jpg 1x, img/index/photo-bridge-t-@2x.jpg 2x">
+                  <img class="advantages__image" src="img/index/photo-bridge-m-@1x.jpg"
+                    srcset="img/index/photo-bridge-m-@2x.jpg 2x" width="320" height="260" alt="Мост дьявола.">
+                </picture>
+              </div>
             </li>
             <li class="advantages__item advantages__item--gray">
               <h3 class="advantages__title advantages__title--gray">Небольшая площадь</h3>

@@ -9,42 +9,23 @@
 // Блоки компонентов
 // Главная страница
 @import "./block/advantages.scss";
-@import "./block/advantages_tablet.scss";
-@import "./block/advantages_desctop.scss";
 @import "./block/map.scss";
 @import "./block/search.scss";
-@import "./block/search_tablet.scss";
-@import "./block/search_desctop.scss";
 // Страница обратной связи
 @import "./block/error.scss";
-@import "./block/error_tablet.scss";
-@import "./block/feedback.scss";
-@import "./block/feedback_tablet.scss";
-@import "./block/feedback_desctop.scss";
+@import "./block/form.scss";
 @import "./block/success.scss";
-@import "./block/success_tablet.scss";
 // Страница галереи
+@import "./block/photo.scss";
 @import "./block/card-photo.scss";
-@import "./block/card-photo_tablet.scss";
-@import "./block/card-photo_desctop.scss";
 @import "./block/gallery.scss";
 @import "./block/video.scss";
-@import "./block/video_tablet.scss";
-@import "./block/video_desctop.scss";
 // Общие блоки
-@import "./block/intro-common.scss";
-@import "./block/intro-common_tablet.scss";
-@import "./block/intro-common_desctop.scss";
+@import "./block/intro.scss";
 @import "./block/main-container.scss";
 @import "./block/main-footer.scss";
-@import "./block/main-footer_tablet.scss";
-@import "./block/main-footer_desctop.scss";
 @import "./block/main-header.scss";
-@import "./block/main-header_tablet.scss";
 @import "./block/main-navigation.scss";
-@import "./block/main-navigation_tablet.scss";
 @import "./block/social.scss";
 @import "./block/button.scss";
 @import "./block/page.scss";
-@import "./block/page_tablet.scss";
-@import "./block/page_desctop.scss";

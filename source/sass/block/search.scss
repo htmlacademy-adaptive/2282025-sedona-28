@@ -1,26 +1,57 @@
-// Mobile
-@media (min-width: $mobile-width) {
-  .search__wrapper {
+.search__wrapper {
+  @media (min-width: $mobile-width) {
     max-width: 284px;
     width: 100%;
     padding: 38px 0 49px 0;
     margin: 0 auto;
   }
 
-  .search__title {
+  @media (min-width: 420px)and(max-width: $mobile-width-only) {
+    max-width: 324px;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 435px;
+    padding: 60px 0 55px 0;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding: 60px 0 66px 0;
+  }
+}
+
+.search__title {
+  @media (min-width: $mobile-width) {
     @include title;
     color: $color-black;
     font-size: 21px;
     margin-bottom: 26px;
   }
 
-  .search__text {
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
+
+  @media (min-width: $desctop-width) {
+    font-size: 30px;
+  }
+}
+
+.search__text {
+  @media (min-width: $mobile-width) {
     @include text;
     margin-bottom: 32px;
     color: $color-brown;
   }
 
-  .search__button {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 44px;
+  }
+}
+
+.search__button {
+  @media (min-width: $mobile-width) {
     @include title;
     display: flex;
     justify-content: center;
@@ -50,11 +81,8 @@
       color: rgba($color: $color-white, $alpha: 0.3);
     }
   }
-}
 
-// Mobile streth
-@media (min-width: 420px)and(max-width: $mobile-width-only) {
-  .search__wrapper {
-    max-width: 324px;
+  @media (min-width: $tablet-width) {
+    max-width: 458px;
   }
 }

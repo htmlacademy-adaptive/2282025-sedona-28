@@ -1,11 +1,16 @@
-// Mobile
-@media (min-width: $mobile-width) {
-  .main-header {
+.main-header {
+  @media (min-width: $mobile-width) {
     min-height: 56px;
     position: relative;
   }
 
-  .main-header__logo {
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.main-header__logo {
+  @media (min-width: $mobile-width) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,5 +19,9 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
+  }
+
+  @media (min-width: $tablet-width) {
+    z-index: 2;
   }
 }
