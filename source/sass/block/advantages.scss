@@ -4,17 +4,15 @@
   }
 
   @media (min-width: $mobile-width) and (max-width: 420px) {
-    .advantages__wrapper {
-      &::before {
-        content: "";
-        position: absolute;
-        top: -16px;
-        right: 0;
-        width: 100%;
-        height: 37px;
-        background-image: url("../img/index/advantages-triangle.svg");
-        background-position: center;
-      }
+    &::before {
+      content: "";
+      position: absolute;
+      top: -16px;
+      right: 0;
+      width: 100%;
+      height: 37px;
+      background-image: url("../img/index/advantages-triangle.svg");
+      background-position: center;
     }
   }
 }
@@ -93,7 +91,7 @@
     }
 
     &--img-reverse {
-      padding: 37px 18px;
+      padding: 38px 18px;
     }
   }
 
@@ -154,6 +152,10 @@
 
     &--img-reverse {
       color: $color-white;
+
+      br {
+        display: none;
+      }
     }
   }
 
@@ -163,7 +165,7 @@
     width: 100%;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 11px;
+    margin-bottom: 14px;
 
     &--gray {
       max-width: 155px;
@@ -172,14 +174,28 @@
       margin: 0 auto;
       margin-bottom: 11px;
     }
+
+    &--img-reverse {
+
+      br {
+        display: block;
+      }
+    }
+  }
+
+  @media (min-width: $desctop-width) {
+    &--gray {
+      margin-bottom: 15px;
+    }
   }
 }
+
 
 .advantages__number {
   @media (min-width: $mobile-width) {
     @include text;
     color: $color-brown;
-    margin-bottom: 17px;
+    margin-bottom: 18px;
 
     &--img {
       color: $color-white;
@@ -195,6 +211,20 @@
 
     &--gray {
       margin-bottom: 27px;
+    }
+
+    &--img {
+      margin-bottom: 23px;
+    }
+
+    &--img-reverse {
+      margin-bottom: 23px;
+    }
+  }
+
+  @media (min-width: $desctop-width) {
+    &--gray {
+      margin-bottom: 23px;
     }
   }
 }
@@ -257,7 +287,7 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
-    padding: 23px 18px 46px 18px;
+    padding: 23px 18px 43px 18px;
   }
 
   @media (min-width: $tablet-width) {
@@ -273,19 +303,19 @@
   @media (min-width: $mobile-width) {
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 16px;
     position: relative;
 
     &--house {
       &::before {
         content: "";
         position: absolute;
-        background-image: url("../img/index/house.svg");
+        mask-image: url("../img/stack-sprait.svg#house");
+        background-color: $color-blue;
         background-repeat: no-repeat;
-        max-width: 40px;
         width: 100%;
-        height: 100%;
-        background-size: contain;
+        max-width: 40px;
+        height: 40px;
       }
     }
 
@@ -293,13 +323,12 @@
       &::before {
         content: "";
         position: absolute;
-        background-image: url("../img/index/food.svg");
-        display: block;
+        mask-image: url("../img/stack-sprait.svg#food");
+        background-color: $color-blue;
         background-repeat: no-repeat;
-        max-width: 40px;
         width: 100%;
-        height: 100%;
-        background-size: contain;
+        max-width: 40px;
+        height: 40px;
       }
     }
 
@@ -307,13 +336,12 @@
       &::before {
         content: "";
         position: absolute;
-        background-image: url("../img/index/souvenir.svg");
-        display: block;
+        mask-image: url("../img/stack-sprait.svg#souvenir");
+        background-color: $color-blue;
         background-repeat: no-repeat;
-        max-width: 40px;
         width: 100%;
-        height: 100%;
-        background-size: contain;
+        max-width: 40px;
+        height: 40px;
       }
     }
   }
@@ -327,6 +355,7 @@
 
       &::before {
         top: 60px;
+        width: 100%;
         max-width: 77px;
         height: 72px;
       }
@@ -337,6 +366,7 @@
 
       &::before {
         top: 62px;
+        width: 100%;
         max-width: 81px;
         height: 68px;
       }
@@ -347,6 +377,7 @@
 
       &::before {
         top: 64px;
+        width: 100%;
         max-width: 67px;
         height: 75px;
       }
@@ -362,6 +393,7 @@
 
       &::before {
         top: 69px;
+        width: 100%;
         max-width: 80px;
         height: 72px;
       }
@@ -372,6 +404,7 @@
 
       &::before {
         top: 72px;
+        width: 100%;
         max-width: 73px;
         height: 69px;
       }
@@ -382,6 +415,7 @@
 
       &::before {
         top: 69px;
+        width: 100%;
         max-width: 78px;
         height: 75px;
       }
@@ -395,12 +429,15 @@
     text-align: start;
     padding-left: 47px;
     color: $color-black;
+    padding-top: 8px;
   }
 
   @media (min-width: $tablet-width) {
     margin: 0;
     font-size: 21px;
     padding-left: 0;
+    padding-top: 0;
+    text-align: center;
   }
 }
 

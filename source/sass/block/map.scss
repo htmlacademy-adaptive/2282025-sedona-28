@@ -1,6 +1,26 @@
 .map__wrapper {
   @media (min-width: $mobile-width) {
     margin-bottom: 8px;
+
+    &--nojs {
+      .map__google {
+        display: none;
+      }
+
+      .map__google-img {
+        display: flex;
+      }
+    }
+
+    &--js {
+      .map__google {
+        display: block;
+      }
+
+      .map__google-img {
+        display: none;
+      }
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -15,4 +35,24 @@
     height: 350px;
     margin: 0;
   }
+}
+
+.map__google-img {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/stack-sprait.svg#map-marker");
+    width: 100%;
+    max-width: 27px;
+    height: 27px;
+  }
+}
+
+.map__image {
+  width: 100%;
 }

@@ -12,6 +12,7 @@
 
   @media (min-width: $desctop-width) {
     padding: 0 120px;
+    flex-wrap: nowrap;
   }
 }
 
@@ -21,7 +22,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
-    gap: 100px;
+    gap: 58px;
     position: relative;
     margin-bottom: 63px;
 
@@ -37,6 +38,8 @@
 
   @media (min-width: $desctop-width) {
     margin-bottom: 71px;
+    gap: 100px;
+    width: 100%;
   }
 }
 
@@ -119,7 +122,7 @@
 
   @media (min-width: $desctop-width) {
     &--impression {
-      margin-bottom: 56px;
+      margin-bottom: 70px;
 
       &::before {
         width: 280px;
@@ -131,7 +134,7 @@
     }
 
     &--place {
-      margin-bottom: 49px;
+      margin-bottom: 86px;
 
       &::before {
         width: 280px;
@@ -175,7 +178,7 @@
   }
 
   @media (min-width: $desctop-width) {
-    gap: 28px;
+    gap: 16px;
     margin: 0;
   }
 }
@@ -191,17 +194,25 @@
       &::before {
         content: "";
         position: absolute;
-        display: block;
         width: 58px;
         height: 58px;
         background-color: $color-light-gray;
-        background-image: url("../img/form/icon-phone.svg");
-        border: 2px solid transparent;
+        border: 4px solid $color-light-gray;
         background-repeat: no-repeat;
-        background-position-x: center;
-        background-position-y: center;
         bottom: 0;
         right: 0;
+        margin: 0;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        background-image: url("../img/stack-sprait.svg#icon-phone");
+        width: 100%;
+        max-width: 18px;
+        height: 18px;
+        bottom: 21px;
+        right: 20px;
       }
     }
 
@@ -213,13 +224,21 @@
         width: 58px;
         height: 58px;
         background-color: $color-light-gray;
-        background-image: url("../img/form/icon-email.svg");
-        border: 2px solid transparent;
-        background-repeat: no-repeat;
-        background-position-x: center;
-        background-position-y: center;
+        border: 4px solid $color-light-gray;
         bottom: 0;
         right: 0;
+        margin: 0;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        background-image: url("../img/stack-sprait.svg#icon-email");
+        width: 100%;
+        max-width: 16px;
+        height: 12px;
+        bottom: 24px;
+        right: 21px;
       }
     }
   }
@@ -251,6 +270,7 @@
 .form__input-text {
   @media (min-width: $mobile-width) {
     @include title;
+    font-family: inherit;
     background-color: $color-beige;
     text-align: start;
     text-transform: none;
@@ -297,8 +317,10 @@
   }
 
   @media (min-width: $desctop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 28px;
-    padding: 28px 0 0 0;
+    padding: 46px 10px 0 53px;
   }
 }
 
@@ -312,32 +334,36 @@
   @media (min-width: $mobile-width) {
     position: relative;
     display: block;
-    padding: 10px 0 10px 62px;
+    padding: 10px 33px 10px 62px;
+
+    &:nth-child(3n) {
+      padding-right: 0;
+    }
   }
 }
 
 .form__radio-input {
-  &:hover + .form__radio-mark {
+  &:hover+.form__radio-mark {
     background-color: $color-light-gray;
   }
 
-  &:focus + .form__radio-mark {
+  &:focus+.form__radio-mark {
     outline: 1px solid $color-gray-down;
   }
 
-  &:active + .form__radio-mark {
+  &:active+.form__radio-mark {
     outline: none;
     background-color: $color-gray-down;
   }
 
-  &:disabled + .form__radio-mark {
+  &:disabled+.form__radio-mark {
     outline: none;
     background-color: $color-gray;
     opacity: 0.3;
   }
 }
 
-.form__radio-input:checked + .form__radio-mark {
+.form__radio-input:checked+.form__radio-mark {
   @media (min-width: $mobile-width) {
     &::before {
       content: "";
@@ -388,15 +414,14 @@
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
     column-gap: 32px;
     row-gap: 16px;
     padding: 28px 84px 0 84px;
   }
 
   @media (min-width: $desctop-width) {
-    column-gap: 64px;
-    padding: 28px 0 0 0;
+    column-gap: 45px;
+    padding: 60px 44px 0 44px;
   }
 }
 
@@ -419,35 +444,37 @@
 }
 
 .form__checkbox-input {
-  &:hover + .form__checkbox-mark {
+  &:hover+.form__checkbox-mark {
     background-color: $color-light-gray;
   }
 
-  &:focus + .form__checkbox-mark {
+  &:focus+.form__checkbox-mark {
     outline: 1px solid $color-gray-down;
   }
 
-  &:active + .form__checkbox-mark {
+  &:active+.form__checkbox-mark {
     outline: none;
     background-color: $color-gray-down;
   }
 
-  &:disabled + .form__checkbox-mark {
+  &:disabled+.form__checkbox-mark {
     outline: none;
     background-color: $color-gray;
     opacity: 0.3;
   }
 }
 
-.form__checkbox-input:checked + .form__checkbox-mark {
+.form__checkbox-input:checked+.form__checkbox-mark {
   @media (min-width: $mobile-width) {
     &::before {
       content: "";
       position: absolute;
-      background-image: url("../img/form/check.svg");
-      width: 22px;
+      mask-image: url("../img/stack-sprait.svg#icon-chek");
+      background-color: $color-brown;
+      width: 100%;
+      max-width: 22px;
       height: 16px;
-      top: 13px;
+      top: 12px;
       left: 10px;
     }
   }
@@ -480,7 +507,7 @@
     flex-direction: column;
     text-transform: none;
     text-align: start;
-    padding: 16px;
+    padding: 12px;
     width: 100%;
     height: 150px;
     margin-top: 20px;
@@ -491,6 +518,8 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    height: 160px;
+    margin-top: 28px;
   }
 
   @media (min-width: $desctop-width) {
@@ -546,7 +575,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 324px;
+    width: 384px;
   }
 }
 
@@ -554,10 +583,9 @@
   @media (min-width: $mobile-width) {
     @include text;
     color: $color-brown;
-    font-size: 12px;
     opacity: 0.6;
     text-align: right;
-    margin-top: 3px;
+    margin-top: 2px;
   }
 
   @media (min-width: $tablet-width) {

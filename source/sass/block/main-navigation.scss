@@ -1,6 +1,6 @@
 .main-navigation {
   @media (max-width: $mobile-width-only) {
-    &--opened {
+    &--open {
       .main-navigation__wrapper {
         &::before {
           content: "";
@@ -29,12 +29,12 @@
   }
 
   @media (min-width: $mobile-width) {
-    &--opened {
+    &--open {
       .main-navigation__wrapper {
         position: absolute;
       }
 
-      .main-navigation__toggle-close {
+      .main-navigation__toggle-closed {
         color: $color-white;
         cursor: pointer;
 
@@ -66,14 +66,26 @@
         }
       }
 
-      .main-navigation__toggle-close {
+      .main-navigation__toggle-closed {
         display: none;
       }
     }
 
     &--nojs {
+      .main-navigation__wrapper {
+        position: relative;
+      }
+
       .main-navigation__toggle {
         display: none;
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--open {
+      .main-navigation__wrapper {
+        position: relative;
       }
     }
   }
@@ -85,7 +97,6 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    position: relative;
     z-index: 2;
   }
 

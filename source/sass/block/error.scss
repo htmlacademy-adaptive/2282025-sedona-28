@@ -1,6 +1,50 @@
+.main-modal {
+  @media (min-width: $mobile-width) {
+    &--open {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($color-black, $alpha: 0.3);
+      z-index: 3;
+    }
+
+    &--closed {
+      .main-modal__wrapper {
+        display: none;
+      }
+    }
+  }
+}
+
+.main-modal__container-error {
+  @media (min-width: $mobile-width) {
+    box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+
+    &--open {
+      .error__inner {
+        display: block;
+      }
+    }
+
+    &--closed {
+      .error__inner {
+        display: none;
+      }
+    }
+  }
+}
+
 .error__inner {
   @media (min-width: $mobile-width) {
     padding: 45px 0 35px 0;
+    background-color: $color-white;
   }
 
   @media (min-width: $tablet-width) {
@@ -16,10 +60,7 @@
   @media (min-width: $mobile-width) {
     display: flex;
     flex-direction: column;
-    max-width: 237px;
-    width: 100%;
-    padding: 0 0 28px 0;
-    margin: 0 auto;
+    padding: 0 42px 28px 42px;
   }
 
   @media (min-width: $tablet-width) {
@@ -34,6 +75,7 @@
   @media (min-width: $mobile-width) {
     @include title;
     color: $color-black;
+    margin-bottom: 26px;
   }
 }
 
@@ -41,7 +83,6 @@
   @media (min-width: $mobile-width) {
     @include text;
     color: $color-brown;
-    margin-top: 36px;
   }
 }
 
@@ -52,7 +93,7 @@
     flex-direction: column;
     align-items: center;
     width: 180px;
-    padding: 10px;
+    padding: 12px;
     margin: 0 auto;
 
     &:hover {
@@ -61,12 +102,12 @@
 
     &:focus {
       outline: none;
-      background-color: linear-gradient(180deg, $color-blue 0%, $color-blue-down 100%);
+      background: linear-gradient(180deg, $color-blue 0%, $color-blue-down 100%);
     }
 
     &:active {
       outline: none;
-      background-color: linear-gradient(180deg, $color-beige -165%, $color-blue 45%);
+      background: linear-gradient(180deg, $color-beige -165%, $color-blue 45%);
     }
   }
 
