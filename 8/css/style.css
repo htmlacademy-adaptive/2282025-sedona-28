@@ -1789,6 +1789,7 @@
 @media (min-width: 1200px) {
   .video__slogan {
     padding: 62px 0 85px 0;
+    max-width: 451px;
   }
 }
 
@@ -1999,7 +2000,7 @@
   .intro__wrapper--catalog {
     max-width: 280px;
     width: 100%;
-    padding: 28px 0 36px 0;
+    padding: 38px 0 36px 0;
     margin: 0 auto;
   }
   .intro__wrapper--form {
@@ -2027,13 +2028,13 @@
     padding: 66px 0 80px 0;
   }
   .intro__wrapper--form {
-    max-width: 436px;
+    max-width: 438px;
     padding: 64px 0 108px 0;
   }
 }
 @media (min-width: 1200px) {
   .intro__wrapper--full {
-    max-width: 485px;
+    max-width: 488px;
     padding: 59px 0 44px 0;
   }
   .intro__wrapper--catalog {
@@ -2041,7 +2042,7 @@
     padding: 100px 0 88px 0;
   }
   .intro__wrapper--form {
-    max-width: 436px;
+    max-width: 438px;
     padding: 115px 0 68px 0;
   }
 }
@@ -2055,7 +2056,7 @@
     text-transform: uppercase;
     margin: 0;
     color: #000000;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
   }
   .intro__title--form {
     margin-bottom: 25px;
