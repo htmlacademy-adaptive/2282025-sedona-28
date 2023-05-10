@@ -122,7 +122,7 @@
 
   @media (min-width: $desctop-width) {
     &--impression {
-      margin-bottom: 70px;
+      margin-bottom: 72px;
 
       &::before {
         width: 280px;
@@ -343,27 +343,27 @@
 }
 
 .form__radio-input {
-  &:hover+.form__radio-mark {
+  &:hover + .form__radio-mark {
     background-color: $color-light-gray;
   }
 
-  &:focus+.form__radio-mark {
+  &:focus + .form__radio-mark {
     outline: 1px solid $color-gray-down;
   }
 
-  &:active+.form__radio-mark {
+  &:active + .form__radio-mark {
     outline: none;
     background-color: $color-gray-down;
   }
 
-  &:disabled+.form__radio-mark {
+  &:disabled + .form__radio-mark {
     outline: none;
     background-color: $color-gray;
     opacity: 0.3;
   }
 }
 
-.form__radio-input:checked+.form__radio-mark {
+.form__radio-input:checked + .form__radio-mark {
   @media (min-width: $mobile-width) {
     &::before {
       content: "";
@@ -420,8 +420,9 @@
   }
 
   @media (min-width: $desctop-width) {
-    column-gap: 45px;
-    padding: 60px 44px 0 44px;
+    column-gap: 64px;
+    padding: 60px 0 0 45px;
+    justify-content: flex-start;
   }
 }
 
@@ -431,7 +432,7 @@
   }
 
   @media (min-width: $desctop-width) {
-    width: 184px;
+    width: auto;
   }
 }
 
@@ -444,33 +445,32 @@
 }
 
 .form__checkbox-input {
-  &:hover+.form__checkbox-mark {
+  &:hover + .form__checkbox-mark {
     background-color: $color-light-gray;
   }
 
-  &:focus+.form__checkbox-mark {
+  &:focus + .form__checkbox-mark {
     outline: 1px solid $color-gray-down;
   }
 
-  &:active+.form__checkbox-mark {
+  &:active + .form__checkbox-mark {
     outline: none;
     background-color: $color-gray-down;
   }
 
-  &:disabled+.form__checkbox-mark {
+  &:disabled + .form__checkbox-mark {
     outline: none;
     background-color: $color-gray;
     opacity: 0.3;
   }
 }
 
-.form__checkbox-input:checked+.form__checkbox-mark {
+.form__checkbox-input:checked + .form__checkbox-mark {
   @media (min-width: $mobile-width) {
     &::before {
       content: "";
       position: absolute;
-      mask-image: url("../img/stack-sprait.svg#icon-chek");
-      background-color: $color-brown;
+      background-image: url("../img/stack-sprait.svg#icon-chek");
       width: 100%;
       max-width: 22px;
       height: 16px;
@@ -575,6 +575,10 @@
   }
 
   @media (min-width: $tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: $desctop-width) {
     width: 384px;
   }
 }

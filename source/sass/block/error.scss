@@ -1,58 +1,14 @@
-.main-modal {
-  @media (min-width: $mobile-width) {
-    &--open {
-      position: fixed;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-      background-color: rgba($color-black, $alpha: 0.3);
-      z-index: 3;
-    }
-
-    &--closed {
-      .main-modal__wrapper {
-        display: none;
-      }
-    }
-  }
-}
-
-.main-modal__container-error {
-  @media (min-width: $mobile-width) {
-    box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
-
-    &--open {
-      .error__inner {
-        display: block;
-      }
-    }
-
-    &--closed {
-      .error__inner {
-        display: none;
-      }
-    }
-  }
-}
-
 .error__inner {
   @media (min-width: $mobile-width) {
     padding: 45px 0 35px 0;
-    background-color: $color-white;
   }
 
   @media (min-width: $tablet-width) {
-    max-width: 400px;
-    width: 100%;
-    height: auto;
-    padding: 54px 0 49px 0;
-    margin: 0 auto;
+    padding: 52px 47px 50px 47px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding: 46px 47px 50px 47px;
   }
 }
 
@@ -60,22 +16,35 @@
   @media (min-width: $mobile-width) {
     display: flex;
     flex-direction: column;
-    padding: 0 42px 28px 42px;
+    padding: 0 42px 0 42px;
+    margin-bottom: 28px;
   }
 
   @media (min-width: $tablet-width) {
     max-width: 307px;
     width: 100%;
-    padding: 54px 0 29px 0;
-    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 46px;
   }
 }
 
 .error__title {
   @media (min-width: $mobile-width) {
     @include title;
+    max-width: 250px;
+    width: 100%;
     color: $color-black;
-    margin-bottom: 26px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
   }
 }
 
@@ -89,10 +58,12 @@
 .error__button {
   @media (min-width: $mobile-width) {
     @include title;
+    font-size: 21px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 180px;
+    max-width: 180px;
+    width: 100%;
     padding: 12px;
     margin: 0 auto;
 
@@ -113,8 +84,5 @@
 
   @media (min-width: $tablet-width) {
     max-width: 272px;
-    width: 100%;
-    padding: 10px;
-    margin: 0 auto;
   }
 }

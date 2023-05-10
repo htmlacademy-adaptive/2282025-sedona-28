@@ -101,8 +101,7 @@
 
     &::before {
       content: "";
-      mask-image: url("../img/stack-sprait.svg#play-video");
-      background-color: rgba($color-white, $alpha: 0.7);
+      background-image: url("../img/stack-sprait.svg#play-video");
       background-repeat: no-repeat;
       width: 100%;
       max-width: 47px;

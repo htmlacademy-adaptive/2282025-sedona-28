@@ -1,62 +1,47 @@
-.main-modal__container-success {
-  @media (min-width: $mobile-width) {
-    &--open {
-      .success__inner {
-        display: block;
-      }
-    }
-
-    &--closed {
-      .success__inner {
-        display: none;
-      }
-    }
-  }
-}
-
-.main-modal__wrapper {
-  @media (min-width: $tablet-width) {
-    max-width: 640px;
-    width: 100%;
-  }
-}
-
-.success__inner {
-  @media (min-width: $mobile-width) {
-    background-color: $color-white;
-  }
-}
-
 .success__container {
   @media (min-width: $mobile-width) {
     display: flex;
     flex-direction: column;
-    padding: 48px 38px 48px 38px;
+    padding: 46px 38px 48px 38px;
   }
 
   @media (min-width: $tablet-width) {
-    padding: 56px 100px 48px 100px;
+    padding: 52px 114px 52px 114px;
   }
+
   @media (min-width: $desctop-width) {
-    padding:51px 100px 55px 100px;
+    padding: 50px 114px 52px 114px;
   }
 }
 
 .success__title {
   @media (min-width: $mobile-width) {
     @include title;
+    color: $color-black;
     margin-bottom: 24px;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
   }
 }
 
 .success__text {
   @media (min-width: $mobile-width) {
     @include text;
+    color: $color-brown;
+  }
+}
+
+.success__background-grey {
+  @media (min-width: $mobile-width) {
+    background-color: $color-beige;
+    padding: 20px 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 44px 0;
   }
 }
 
@@ -66,7 +51,10 @@
     max-width: 280px;
     width: 100%;
     padding: 10px;
-    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
 
     &:hover {
       background-color: $color-blue-hover;
@@ -88,14 +76,6 @@
     max-width: 458px;
     width: 100%;
     padding: 12px;
-    margin: 44px auto;
-  }
-}
-
-
-.success__background-grey {
-  @media (min-width: $mobile-width) {
-    display: flex;
-    background-color: $color-beige;
+    margin: 0 auto;
   }
 }
