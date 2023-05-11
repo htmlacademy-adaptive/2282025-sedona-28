@@ -24,14 +24,22 @@
     background-color: $color-beige;
     padding: 22px 20px 16px 20px;
     margin-top: auto;
+
+    &--dark {
+      background-color: $color-light-gray;
+    }
   }
 
   @media (min-width: $desctop-width) {
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: 20px 20px 17px 20px;
+    padding: 19px 20px 16px 25px;
     background-color: rgba($color-black, $alpha: 0.3);
+
+    &--stretch {
+      padding: 20px 20px 15px 20px;
+    }
   }
 }
 
@@ -45,7 +53,6 @@
   display: block;
   width: 100%;
   height: auto;
-  object-fit: cover;
   margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
@@ -63,7 +70,7 @@
 
   @media (min-width: $desctop-width) {
     color: $color-white;
-    padding-left: 4px;
+    margin-bottom: 4px;
   }
 }
 
@@ -99,6 +106,7 @@
 
   @media (min-width: $desctop-width) {
     color: $color-white;
+    margin-bottom: 0;
   }
 }
 

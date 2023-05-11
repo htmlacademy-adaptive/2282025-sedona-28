@@ -2,7 +2,7 @@
   @media (min-width: $mobile-width) {
     background-color: $color-gray;
     background-image: url("../img/catalog/intro-background-mobile.jpg");
-    background-position: center;
+    background-position: center bottom;
     background-repeat: no-repeat;
     padding: 52px 0 67px 0;
     position: relative;
@@ -167,9 +167,13 @@
   @media (min-width: $mobile-width) {
     @include title;
     color: $color-black;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 
     &--form {
+      margin-bottom: 25px;
+    }
+
+    &--catalog {
       margin-bottom: 25px;
     }
   }
