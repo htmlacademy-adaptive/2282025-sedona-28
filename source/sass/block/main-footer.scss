@@ -49,7 +49,6 @@
   @media (min-width: $mobile-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     text-decoration: none;
     max-width: 130px;
     width: 100%;
@@ -69,6 +68,7 @@
       color: $color-blue-hover;
 
       .main-footer__copyright-title {
+        outline: none;
         color: $color-blue-hover;
       }
     }
@@ -78,6 +78,7 @@
       color: $color-blue-down;
 
       .main-footer__copyright-title {
+        outline: none;
         color: $color-blue-down;
       }
     }

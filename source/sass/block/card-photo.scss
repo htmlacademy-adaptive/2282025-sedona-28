@@ -22,15 +22,24 @@
     align-items: center;
     grid-template-columns: 2fr 1fr;
     background-color: $color-beige;
-    padding: 22px 20px 15px 20px;
+    padding: 22px 20px 16px 20px;
     margin-top: auto;
+
+    &--dark {
+      background-color: $color-light-gray;
+    }
   }
 
   @media (min-width: $desctop-width) {
     position: absolute;
     bottom: 0;
     width: 100%;
+    padding: 19px 20px 16px 25px;
     background-color: rgba($color-black, $alpha: 0.3);
+
+    &--stretch {
+      padding: 20px 20px 15px 20px;
+    }
   }
 }
 
@@ -44,7 +53,6 @@
   display: block;
   width: 100%;
   height: auto;
-  object-fit: cover;
   margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
@@ -62,6 +70,7 @@
 
   @media (min-width: $desctop-width) {
     color: $color-white;
+    margin-bottom: 4px;
   }
 }
 
@@ -86,29 +95,30 @@
     align-items: baseline;
     text-align: start;
     font-weight: 700;
-    max-width: 240px;
     color: $color-black;
-  }
-
-  &::before {
-    content: "";
-    background-image: url("../img/catalog/like-icon.svg");
-    background-repeat: no-repeat;
-    min-width: 23px;
-    max-width: 23px;
-    width: 100%;
-    height: 21px;
   }
 
   @media (min-width: $tablet-width) {
     justify-content: end;
     margin-bottom: 8px;
+    gap: 9px;
   }
 
   @media (min-width: $desctop-width) {
-    &::before {
-      background-image: url("../img/catalog/like-icon-white.svg");
-    }
+    color: $color-white;
+    margin-bottom: 0;
+  }
+}
+
+
+.card-photo__like-icon {
+  @media (min-width: $mobile-width) {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $desctop-width) {
+    fill: $color-white;
+    opacity: 1;
   }
 }
 
@@ -120,13 +130,6 @@
     max-width: 240px;
     color: $color-black;
   }
-
-  // @media (min-width: $tablet-width) {
-  //   @include text;
-  //   font-weight: 700;
-  //   max-width: 240px;
-  //   text-align: start;
-  // }
 
   @media (min-width: $desctop-width) {
     color: $color-white;

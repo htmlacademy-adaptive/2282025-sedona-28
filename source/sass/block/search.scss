@@ -2,7 +2,7 @@
   @media (min-width: $mobile-width) {
     max-width: 284px;
     width: 100%;
-    padding: 38px 0 49px 0;
+    padding: 39px 0 49px 0;
     margin: 0 auto;
   }
 
@@ -11,13 +11,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    max-width: 435px;
+    max-width: 458px;
     padding: 60px 0 55px 0;
     margin: 0 auto;
   }
 
   @media (min-width: $desctop-width) {
-    padding: 60px 0 66px 0;
+    padding: 63px 0 66px 0;
   }
 }
 
@@ -26,11 +26,12 @@
     @include title;
     color: $color-black;
     font-size: 21px;
-    margin-bottom: 26px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
+    margin-bottom: 33px;
   }
 
   @media (min-width: $desctop-width) {
@@ -43,10 +44,18 @@
     @include text;
     margin-bottom: 32px;
     color: $color-brown;
+
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 44px;
+
+    br {
+      display: block;
+    }
   }
 }
 

@@ -23,12 +23,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    max-width: 446px;
-    padding: 62px 0 70px 0;
+    max-width: 450px;
+    padding: 56px 0 89px 0;
   }
 
   @media (min-width: $desctop-width) {
-    padding: 62px 0 64px 0;
+    padding: 62px 0 85px 0;
+    max-width: 451px;
   }
 }
 
@@ -36,11 +37,12 @@
   @media (min-width: $mobile-width) {
     @include title;
     color: $color-black;
-    margin-bottom: 38px;
+    margin-bottom: 27px;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
+    margin-bottom: 32px;
   }
 }
 
@@ -69,13 +71,25 @@
   @media (min-width: $mobile-width) {
     display: block;
     width: 100%;
+    max-width: 280px;
     height: auto;
-    object-fit: cover;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    max-width: 648px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    max-width: 800px;
   }
 }
 
 .video__play {
   @media (min-width: $mobile-width) {
+    display: flex;
     position: absolute;
     width: 47px;
     height: 54px;
@@ -88,11 +102,11 @@
 
     &::before {
       content: "";
-      display: flex;
-      width: 47px;
-      height: 54px;
-      background-image: url("../img/catalog/play-video.svg");
+      background-image: url("../img/stack-sprait.svg#play-video");
       background-repeat: no-repeat;
+      width: 100%;
+      max-width: 47px;
+      height: 54px;
     }
   }
 }

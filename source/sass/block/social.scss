@@ -9,16 +9,13 @@
   gap: 6px;
 }
 
-.social__item {
+.social__link {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 48px;
   height: 48px;
   background-color: $color-blue;
-}
-
-.social__link {
-  padding: 12px;
-  color: $color-white;
 
   &:hover {
     background-color: $color-blue-hover;
@@ -38,4 +35,8 @@
     background-color: $color-blue-down;
     color: rgba($color: $color-white, $alpha: 0.3);
   }
+}
+
+.social__link-icon {
+  color: $color-white;
 }

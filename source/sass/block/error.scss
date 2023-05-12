@@ -4,11 +4,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    max-width: 400px;
-    width: 100%;
-    height: auto;
-    padding: 54px 0 49px 0;
-    margin: 0 auto;
+    padding: 52px 47px 50px 47px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding: 46px 47px 50px 47px;
   }
 }
 
@@ -16,24 +16,35 @@
   @media (min-width: $mobile-width) {
     display: flex;
     flex-direction: column;
-    max-width: 237px;
-    width: 100%;
-    padding: 0 0 28px 0;
-    margin: 0 auto;
+    padding: 0 42px 0 42px;
+    margin-bottom: 28px;
   }
 
   @media (min-width: $tablet-width) {
     max-width: 307px;
     width: 100%;
-    padding: 54px 0 29px 0;
-    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 46px;
   }
 }
 
 .error__title {
   @media (min-width: $mobile-width) {
     @include title;
+    max-width: 250px;
+    width: 100%;
     color: $color-black;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
   }
 }
 
@@ -41,18 +52,19 @@
   @media (min-width: $mobile-width) {
     @include text;
     color: $color-brown;
-    margin-top: 36px;
   }
 }
 
 .error__button {
   @media (min-width: $mobile-width) {
     @include title;
+    font-size: 21px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 180px;
-    padding: 10px;
+    max-width: 180px;
+    width: 100%;
+    padding: 12px;
     margin: 0 auto;
 
     &:hover {
@@ -61,19 +73,16 @@
 
     &:focus {
       outline: none;
-      background-color: linear-gradient(180deg, $color-blue 0%, $color-blue-down 100%);
+      background: linear-gradient(180deg, $color-blue 0%, $color-blue-down 100%);
     }
 
     &:active {
       outline: none;
-      background-color: linear-gradient(180deg, $color-beige -165%, $color-blue 45%);
+      background: linear-gradient(180deg, $color-beige -165%, $color-blue 45%);
     }
   }
 
   @media (min-width: $tablet-width) {
     max-width: 272px;
-    width: 100%;
-    padding: 10px;
-    margin: 0 auto;
   }
 }
