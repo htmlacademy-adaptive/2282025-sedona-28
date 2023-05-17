@@ -4,9 +4,6 @@
       display: none
     }
   </style>
-  <svg id="intro-triangle" viewBox="0 0 1200 57">
-    <path d="M249.62 23.7 0 0v57h600.05L249.62 0v23.7ZM950.48 23.7V0L600.05 57H1200V0L950.48 23.7Z" />
-  </svg>
   <svg id="house" viewBox="0 0 75 72">
     <path fill="#81B3D2" d="M30.88 64.94h16.5V41.17h-16.5v23.77Zm13.5-2.89H33.88v-18h10.41v18h.1Z" />
     <path fill="#81B3D2"
