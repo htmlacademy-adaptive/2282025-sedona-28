@@ -120,7 +120,8 @@
                 placeholder="Опишите подробно все свои восторги " id="message"></textarea>
             </fieldset>
             <div class="form__group-button"><button class="form__sent button" type="submit">Отправить отзыв</button>
-              <span class="form__footnote">* — Обязательные поля</span></div>
+              <span class="form__footnote">* — Обязательные поля</span>
+            </div>
           </form>
         </div>
       </section>
@@ -136,12 +137,12 @@
               </svg> <span class="visually-hidden">Vkontakte.</span></a></li>
           <li class="social__item"><a class="social__link social__link--telegram" href="https://t.me/htmlacademy"><svg
                 class="social__link-icon" width="21" height="18" role="img">
-                <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                <use xlink:href="img/sprite.svg#icon-tg"></use>
               </svg> <span class="visually-hidden">Telegram.</span></a></li>
           <li class="social__item"><a class="social__link social__link--youtube"
               href="https://www.youtube.com/user/htmlacademyru"><svg class="social__link-icon" width="20" height="14"
                 role="img">
-                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                <use xlink:href="img/sprite.svg#icon-yt"></use>
               </svg> <span class="visually-hidden">Youtube.</span></a></li>
         </ul>
       </section><a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive"><span
@@ -152,7 +153,7 @@
     </footer>
     <div class="main-modal main-modal--closed"><!--open -->
       <div class="main-modal__wrapper">
-        <div class="main-modal__container-error main-modal__container-error--closed error">
+        <div class="main-modal__container-error main-modal__container-error--open error">
           <div class="error__inner">
             <div class="error__container">
               <h2 class="error__title">Что-то пошло не так!</h2>
@@ -160,7 +161,7 @@
             </div><button class="error__button button" type="button">Oк</button>
           </div>
         </div>
-        <div class="main-modal__container-success main-modal__container-success--open success">
+        <div class="main-modal__container-success main-modal__container-success--closed success">
           <div class="success__inner">
             <div class="success__container">
               <h2 class="success__title">Ваш отзыв отправлен!</h2>
