@@ -309,10 +309,12 @@
       &::before {
         content: "";
         position: absolute;
-        background-image: url("../img/stack-sprait.svg#house");
+        background-image: url("../img/index/house.svg");
         background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
         width: 100%;
-        max-width: 38px;
+        max-width: 40px;
         height: 40px;
       }
     }
@@ -321,10 +323,12 @@
       &::before {
         content: "";
         position: absolute;
-        background-image: url("../img/stack-sprait.svg#food");
+        background-image: url("../img/index/food.svg");
         background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
         width: 100%;
-        max-width: 38px;
+        max-width: 43px;
         height: 40px;
       }
     }
@@ -333,10 +337,12 @@
       &::before {
         content: "";
         position: absolute;
-        background-image: url("../img/stack-sprait.svg#souvenir");
+        background-image: url("../img/index/souvenir.svg");
         background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
         width: 100%;
-        max-width: 38px;
+        max-width: 40px;
         height: 40px;
       }
     }
@@ -373,6 +379,7 @@
 
       &::before {
         top: 64px;
+        left: 93px;
         width: 100%;
         max-width: 74px;
         height: 75px;
@@ -453,6 +460,10 @@
   @media (min-width: $tablet-width) {
     padding-left: 0;
     text-align: center;
+
+    br {
+      display: block;
+    }
 
     &--house {
       max-width: 170px;

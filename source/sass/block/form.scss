@@ -207,7 +207,7 @@
       &::after {
         content: "";
         position: absolute;
-        background-image: url("../img/stack-sprait.svg#icon-phone");
+        background-image: url("../img/form/icon-phone.svg");
         width: 100%;
         max-width: 18px;
         height: 18px;
@@ -233,7 +233,7 @@
       &::after {
         content: "";
         position: absolute;
-        background-image: url("../img/stack-sprait.svg#icon-email");
+        background-image: url("../img/form/icon-mail.svg");
         width: 100%;
         max-width: 16px;
         height: 12px;
@@ -460,7 +460,7 @@
     &::before {
       content: "";
       position: absolute;
-      background-image: url("../img/stack-sprait.svg#icon-chek");
+      background-image: url("../img/form/check.svg");
       width: 100%;
       max-width: 22px;
       height: 16px;
