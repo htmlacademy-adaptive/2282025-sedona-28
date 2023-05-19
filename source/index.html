@@ -3,19 +3,22 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Место отдыха, город Седона</title>
   <link rel="stylesheet" href="./css/style.min.css">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="icon" href="favicon.ico"><!-- 32×32 -->
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png"><!-- 180×180 -->
+  <link rel="preload" href="/fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
   <div class="page__container">
     <header class="main-header"><a class="main-header__logo" href="index.html"><img class="main-header__logo-image"
-          src="img/index/sedona-logo.svg" width="185" height="96" alt="Логотип сайта Седона."></a>
+          src="img/index/sedona-logo.svg" width="185" height="96" alt="Логотип сайта Седона." loading="lazy"></a>
       <nav class="main-navigation main-navigation--closed main-navigation--nojs"><!--open --> <button
           class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span> <svg
             class="main-navigation__toggle-open" width="23" height="22" role="img">
@@ -40,7 +43,7 @@
         <div class="intro__logo intro__logo--full">
           <h1 class="visually-hidden">Добро пожаловать в великолепный город Седона.</h1><img
             class="intro__logo-img intro__logo-img--full" src="img/index/text-sedona-logo.svg" width="282" height="214"
-            alt="Приветственный логотип города Седона.">
+            alt="Приветственный логотип города Седона." loading="lazy">
         </div>
         <div class="intro__wrapper intro__wrapper--full">
           <p class="intro__title intro__title--full">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
@@ -60,12 +63,19 @@
               </div>
               <div class="advantages__box-img advantages__box-img--img">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/index/photo-city-d-@1x.webp 1x, img/index/photo-city-d-@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/index/photo-city-t-@1x.webp 1x, img/index/photo-city-t-@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/index/photo-city-m-@1x.webp 1x, img/index/photo-city-m-@2x.webp 2x">
                   <source media="(min-width: 1200px)"
                     srcset="img/index/photo-city-d-@1x.jpg, img/index/photo-city-d-@2x.jpg 2x">
                   <source media="(min-width: 768px)"
                     srcset="img/index/photo-city-t-@1x.jpg, img/index/photo-city-t-@2x.jpg 2x"><img
                     class="advantages__image" src="img/index/photo-city-m-@1x.jpg"
-                    srcset="img/index/photo-city-m-@2x.jpg 2x" width="320" height="260" alt="Местные улочки.">
+                    srcset="img/index/photo-city-m-@2x.jpg 2x" width="320" height="260" alt="Местные улочки."
+                    loading="lazy">
                 </picture>
               </div>
               <ul class="advantages__sublist">
@@ -95,12 +105,19 @@
               </div>
               <div class="advantages__box-img advantages__box-img--img-reverse">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/index/photo-bridge-d-@1x.webp 1x, img/index/photo-bridge-d-@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/index/photo-bridge-t-@1x.webp 1x, img/index/photo-bridge-t-@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/index/photo-bridge-m-@1x.webp 1x, img/index/photo-bridge-m-@2x.webp 2x">
                   <source media="(min-width: 1200px)"
                     srcset="img/index/photo-bridge-d-@1x.jpg, img/index/photo-bridge-d-@2x.jpg 2x">
                   <source media="(min-width: 768px)"
                     srcset="img/index/photo-bridge-t-@1x.jpg, img/index/photo-bridge-t-@2x.jpg 2x"><img
                     class="advantages__image" src="img/index/photo-bridge-m-@1x.jpg"
-                    srcset="img/index/photo-bridge-m-@2x.jpg 2x" width="320" height="260" alt="Мост дьявола.">
+                    srcset="img/index/photo-bridge-m-@2x.jpg 2x" width="320" height="260" alt="Мост дьявола."
+                    loading="lazy">
                 </picture>
               </div>
             </li>
@@ -137,11 +154,16 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe>
           <div class="map__google-img">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/index/map-desktop@1x.webp 1x, img/index/map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/index/map-tablet@1x.webp 1x, img/index/map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/index/map-mobile@1x.webp 1x, img/index/map-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)"
                 srcset="img/index/map-desktop@1x.jpg, img/index/map-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/index/map-tablet@1x.jpg, img/index/map-tablet@2x.jpg 2x">
               <img class="map__image" src="img/index/map-mobile@1x.jpg" srcset="img/index/map-mobile@2x.jpg 2x"
-                width="320" height="350" alt="Как до нас добраться.">
+                width="320" height="350" alt="Как до нас добраться." loading="lazy">
             </picture>
           </div>
         </div>
