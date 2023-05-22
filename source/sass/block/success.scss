@@ -2,7 +2,7 @@
   @media (min-width: $mobile-width) {
     display: flex;
     flex-direction: column;
-    padding: 46px 38px 48px 38px;
+    padding: 40px 38px 50px 38px;
   }
 
   @media (min-width: $tablet-width) {
@@ -37,7 +37,7 @@
 .success__background-grey {
   @media (min-width: $mobile-width) {
     background-color: $color-beige;
-    padding: 20px 0;
+    padding: 23px 0;
   }
 
   @media (min-width: $tablet-width) {

@@ -136,7 +136,7 @@
     display: block;
     object-fit: cover;
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 }
 
@@ -379,7 +379,6 @@
 
       &::before {
         top: 64px;
-        left: 93px;
         width: 100%;
         max-width: 74px;
         height: 75px;
