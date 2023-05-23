@@ -176,7 +176,7 @@
                 id="message"></textarea>
             </fieldset>
             <div class="form__group-button">
-              <button class="form__sent button" type="submit">Отправить отзыв</button>
+              <button class="form__sent button" type="submit" aria-label="Отправвить отзыв">Отправить отзыв</button>
               <span class="form__footnote">* — Обязательные поля</span>
             </div>
           </form>
@@ -221,32 +221,34 @@
         </svg>
       </a>
     </footer>
-    <div class="main-modal main-modal--closed"><!--open -->
-      <div class="main-modal__wrapper">
-        <div class="main-modal__container-error main-modal__container-error--closed error"> <!--open -->
-          <div class="error__inner">
-            <div class="error__container">
-              <h2 class="error__title">Что-то пошло не так!</h2>
-              <p class="error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-            </div>
-            <button class="error__button button" type="button">Oк</button>
+    <!--Для отображения модального окна с сообщением об ошибке, поменяйте модификатор  main-modal--closed на main-modal--open и наоборот что бы закрыть его -->
+    <section class="main-modal main-modal--closed">
+      <div class="main-modal__container-error error">
+        <div class="error__inner">
+          <div class="error__container">
+            <h2 class="error__title">Что-то пошло не так!</h2>
+            <p class="error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
           </div>
+          <button class="error__button button" type="button" aria-label="Закрыть ошибку">Oк</button>
         </div>
-        <div class="main-modal__container-success main-modal__container-success--open success"> <!--closed -->
-          <div class="success__inner">
-            <div class="success__container">
-              <h2 class="success__title">Ваш отзыв отправлен!</h2>
-              <p class="success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В ближайшее время мы
-                опубликуем его на сайте.</p>
-            </div>
-            <div class="success__background-grey">
-              <button class="success__button button" type="button">Закрыть
-                окно</button>
-            </div>
+      </div>
+    </section>
+    <!--Для отображения модального окна с сообщением об успешной отправке формы, поменяйте модификатор main-modal--closed на main-modal--open и наоборот что бы закрыть его -->
+    <section class="main-modal main-modal--closed">
+      <div class="main-modal__container-success success">
+        <div class="success__inner">
+          <div class="success__container">
+            <h2 class="success__title">Ваш отзыв отправлен!</h2>
+            <p class="success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В ближайшее время мы
+              опубликуем его на сайте.</p>
+          </div>
+          <div class="success__background-grey">
+            <button class="success__button button" type="button" aria-label="Закрыть окно">Закрыть
+              окно</button>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </div>
   <script src="js/main.js"></script>
 </body>
