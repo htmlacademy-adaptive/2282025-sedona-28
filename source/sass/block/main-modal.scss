@@ -16,9 +16,7 @@
     }
 
     &--closed {
-      .main-modal__wrapper {
-        display: none;
-      }
+      display: none;
     }
   }
 }
@@ -27,18 +25,6 @@
   @media (min-width: $mobile-width) {
     background-color: $color-white;
     box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
-
-    &--open {
-      .error__inner {
-        display: block;
-      }
-    }
-
-    &--closed {
-      .error__inner {
-        display: none;
-      }
-    }
   }
 }
 
@@ -46,17 +32,5 @@
   @media (min-width: $mobile-width) {
     background-color: $color-white;
     box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
-
-    &--open {
-      .success__inner {
-        display: block;
-      }
-    }
-
-    &--closed {
-      .success__inner {
-        display: none;
-      }
-    }
   }
 }
