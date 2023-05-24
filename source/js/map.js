@@ -1,5 +1,7 @@
-let mapGoogle = document.querySelector('.map__google--nojs');
-let mapImage = document.querySelector('.map__google-img--nojs');
+let map = document.querySelector('.map');
 
-mapGoogle.className = 'map__google map__google--js';
-mapImage.className = 'map__google-img map__google-img--js';
+if (map) {
+  if (map.classList.contains('map--nojs')) {
+    map.classList.remove('map--nojs');
+  }
+}

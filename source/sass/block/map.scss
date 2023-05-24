@@ -1,50 +1,53 @@
-.map__google {
-  @media (min-width: $mobile-width) {
-    width: 100%;
-    height: 350px;
-    margin: 0;
-    margin-bottom: 8px;
+.map {
+  .map__google-img {
+    display: none;
+  }
 
-    &--js {
+  .map__google {
+    @media (min-width: $mobile-width) {
       display: block;
-    }
-
-    &--nojs {
-      display: none;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 0;
-  }
-}
-
-.map__google-img {
-  @media (min-width: $mobile-width) {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    height: 350px;
-    margin: 0;
-
-
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url("../img/index/map-marker.svg");
       width: 100%;
-      max-width: 27px;
-      height: 27px;
+      height: 350px;
+      margin: 0;
+      margin-bottom: 8px;
     }
 
-    &--js {
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
+  }
+
+  &--nojs {
+    .map__google-img {
+      @media (min-width: $mobile-width) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        height: 350px;
+        margin: 0;
+        margin-bottom: 8px;
+
+
+        &::before {
+          content: "";
+          position: absolute;
+          background-image: url("../img/index/map-marker.svg");
+          width: 100%;
+          max-width: 27px;
+          height: 27px;
+        }
+      }
+
+      @media (min-width: $tablet-width) {
+        margin: 0;
+      }
+    }
+
+    .map__google {
       display: none;
-    }
-
-    &--nojs {
-      display: flex;
     }
   }
 }
